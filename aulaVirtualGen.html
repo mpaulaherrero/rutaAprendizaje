@@ -108,13 +108,7 @@
             clone.querySelector(".banner").addEventListener("click",function (e) {
                 const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/';
                 let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
-                //console.log(outerHTML);
-                const el = document.createElement("textarea");
-                el.value = outerHTML;
-                document.body.appendChild(el);
-                el.select();
-                document.execCommand("copy");
-                document.body.removeChild(el);
+                navigator.clipboard.writeText(outerHTML);
                 alert('copiado');
               });
             containerBanners.appendChild(clone);
