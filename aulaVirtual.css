@@ -1,0 +1,403 @@
+:root {
+  --topic-font-family: Mina;
+  --circle-inner-background-color: #fff;
+  --banner-text-color: #fff;
+  --topic-text-color : #FFFFFF;
+  --no-topic-light-color : rgba(248, 235, 57, 1);
+  --no-topic-dark-color : rgba(242, 194, 21, 1);
+  --no-topic-text-color : rgb(102, 102, 102);
+  --topic-one-light-color : rgba(231, 26, 101, 1);
+  --topic-one-dark-color : rgba(194, 24, 91, 1);
+  --topic-two-light-color :rgba(43, 145, 186, 1);
+  --topic-two-dark-color : rgba(30, 116, 168, 1);
+  --topic-three-light-color :rgba(26, 145, 133, 1);
+  --topic-three-dark-color : rgba(27, 121, 107, 1);
+  --topic-four-light-color :rgba(76, 173, 79, 1);
+  --topic-four-dark-color : rgba(56, 142, 60, 1);
+  --topic-five-light-color :rgba(243, 152, 21, 1);
+  --topic-five-dark-color : rgba(240, 124, 23, 1);
+}
+
+.container {
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+  gap: 10px;
+}
+
+.box {
+  border-style : Solid;
+  border-width : 2px;
+  width : 210px;
+  height : 210px;
+  padding: 10px;
+}
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.noTopicDirection {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.noTopicBackground {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textTitleNoTopic {
+  font-family : var(--topic-font-family);
+  font-size : 38px;
+  font-weight: 500;
+  line-height : 40px;
+}
+
+.textDescriptionNoTopic {
+  font-family : var(--topic-font-family);
+  font-size : 20px;
+  font-weight: 500;
+  line-height : 22px;
+  text-align: center;
+}
+
+.textTopic {
+  font-family : var(--topic-font-family);
+  font-size : 18px;
+  font-weight: 500;
+  line-height : 20px;
+  width: 77%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.listTopic {
+  font-family : var(--topic-font-family);
+  font-size : 12px;
+  line-height : 14px;
+  width: 100%;
+  height: 65%;
+}
+
+.listTopic li {
+	margin-bottom: 3px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleOuter {
+  width : 40px;
+  height : 40px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px,
+  				rgba(0, 0, 0, 0.12) 0px 2px 4px,
+				  rgba(0, 0, 0, 0.12) 0px 4px 8px,
+				  rgba(0, 0, 0, 0.12) 0px 8px 16px,
+				  rgba(0, 0, 0, 0.12) 0px 16px 32px,
+				  rgba(0, 0, 0, 0.12) 0px 32px 64px;
+  display: flex;
+}
+
+.circleInner {
+  background : var(--circle-inner-background-color);
+  width : 28px;
+  height : 28px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.textCircle {
+  font-family : var(--topic-font-family);
+  font-weight : 500;
+  font-size : 16px;
+}
+
+.containerBanners {
+	width: 90%;
+  margin-top: 60px;
+}
+
+.banner {
+	width: 100%;
+	height : 90px;
+	display: flex;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-start-start-radius:90px;
+	border-end-start-radius: 90px;
+	align-items: center;
+	padding-left: 16px;
+	margin-bottom: 30px;
+}
+
+.bannerCircleOuter {
+  width : 58px;
+  height : 58px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px,
+  				rgba(0, 0, 0, 0.12) 0px 2px 4px,
+				  rgba(0, 0, 0, 0.12) 0px 4px 8px,
+				  rgba(0, 0, 0, 0.12) 0px 8px 16px,
+				  rgba(0, 0, 0, 0.12) 0px 16px 32px,
+				  rgba(0, 0, 0, 0.12) 0px 32px 64px;
+  display: flex;
+}
+
+.bannerCircleInner {
+  background : var(--circle-inner-background-color);
+  width : 36px;
+  height : 36px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.bannerTextCircle {
+  font-family : var(--topic-font-family);
+  font-weight : 700;
+  font-size : 18px;
+}
+
+.textBanner {
+  font-family : var(--topic-font-family);
+  font-size : 20px;
+  font-weight: 700;
+  line-height : 22px;
+  color: var(--banner-text-color);
+  padding-left: 10px;
+  flex:1;
+}
+
+.containerLogo {
+	width: 90px;
+  margin: auto 10px 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width : 24px;
+  height : 24px;
+}
+
+.logoUCV {
+  width : 28px;
+  height : 28px;
+}
+
+/** no topic **/
+.noTopic {
+  background : var(--no-topic-light-color);
+  border-color : var(--no-topic-dark-color);
+  color : var(--no-topic-text-color);
+}
+
+.textCircleNoTopic {
+	color: var(--no-topic-light-color);
+}
+
+.bannerNoTopic {
+	background : var(--no-topic-dark-color);
+}
+
+.bannerTextCircleNoTopic {
+	color: var(--no-topic-dark-color);
+}
+
+/** topic one **/
+.topicOne {
+  background : var(--topic-one-light-color);
+  border-color : var(--topic-one-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicOneDark {
+   background : var(--topic-one-dark-color);
+   border-color : var(--topic-one-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicOne {
+	color : var(--topic-one-light-color);
+}
+
+.textCircleTopicOneDark {
+	color : var(--topic-one-dark-color);
+}
+
+.bannerTopicOne {
+	background: var(--topic-one-light-color);
+}
+
+.bannerTextCircleTopicOne {
+	color: var(--topic-one-light-color);
+}
+
+.bannerTopicOneDark {
+	background: var(--topic-one-dark-color);
+}
+
+.bannerTextCircleTopicOneDark {
+	color: var(--topic-one-dark-color);
+}
+
+/** topic two **/
+.topicTwo {
+  background : var(--topic-two-light-color);
+  border-color : var(--topic-two-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicTwoDark {
+   background : var(--topic-two-dark-color);
+   border-color : var(--topic-two-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicTwo {
+	color : var(--topic-two-light-color);
+}
+
+.textCircleTopicTwoDark {
+	color : var(--topic-two-dark-color);
+}
+
+.bannerTopicTwo {
+	background: var(--topic-two-light-color);
+}
+
+.bannerTextCircleTopicTwo {
+	color: var(--topic-two-light-color);
+}
+
+.bannerTopicTwoDark {
+	background: var(--topic-two-dark-color);
+}
+
+.bannerTextCircleTopicTwoDark {
+	color: var(--topic-two-dark-color);
+}
+
+/** topic three **/
+.topicThree {
+  background : var(--topic-three-light-color);
+  border-color : var(--topic-three-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicThreeDark {
+   background : var(--topic-three-dark-color);
+   border-color : var(--topic-three-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicThree {
+	color : var(--topic-three-light-color);
+}
+
+.textCircleTopicThreeDark {
+	color : var(--topic-three-dark-color);
+}
+
+.bannerTopicThree {
+	background: var(--topic-three-light-color);
+}
+
+.bannerTextCircleTopicThree {
+	color: var(--topic-three-light-color);
+}
+
+.bannerTopicThreeDark {
+	background: var(--topic-three-dark-color);
+}
+
+.bannerTextCircleTopicThreeDark {
+	color: var(--topic-three-dark-color);
+}
+
+/** topic four **/
+.topicFour {
+  background : var(--topic-four-light-color);
+  border-color : var(--topic-four-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicFourDark {
+   background : var(--topic-four-dark-color);
+   border-color : var(--topic-four-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicFour {
+	color : var(--topic-four-light-color);
+}
+
+.textCircleTopicFourDark {
+	color : var(--topic-four-dark-color);
+}
+
+.bannerTopicFour {
+	background: var(--topic-four-light-color);
+}
+
+.bannerTextCircleTopicFour {
+	color: var(--topic-four-light-color);
+}
+
+.bannerTopicFourDark {
+	background: var(--topic-four-dark-color);
+}
+
+.bannerTextCircleTopicFourDark {
+	color: var(--topic-four-dark-color);
+}
+
+/** topic five **/
+.topicFive {
+  background : var(--topic-five-light-color);
+  border-color : var(--topic-five-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicFiveDark {
+   background : var(--topic-five-dark-color);
+   border-color : var(--topic-five-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicFive {
+	color : var(--topic-five-light-color);
+}
+
+.textCircleTopicFiveDark {
+	color : var(--topic-five-dark-color);
+}
+
+.bannerTopicFive {
+	background: var(--topic-five-light-color);
+}
+
+.bannerTextCircleTopicFive {
+	color: var(--topic-five-light-color);
+}
+
+.bannerTopicFiveDark {
+	background: var(--topic-five-dark-color);
+}
+
+.bannerTextCircleTopicFiveDark {
+	color: var(--topic-five-dark-color);
+}

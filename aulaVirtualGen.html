@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATI Juego</title>
+    <link rel="stylesheet" type="text/css" href="aulaVirtual.css" />
+    <script type="text/javascript" src="aulaVirtualATI.json"></script>
+    <template id="noTopicBox">
+        <div id="box" class="box noTopic">
+            <div class="noTopicDirection center">
+                <div class="textTitleNoTopic"></div>
+                <div class="textDescriptionNoTopic"></div>
+            </div>
+        </div>
+    </template>
+    <template id="topicBox">
+        <div id="box" class="box topic">
+            <div class="circleOuter"><div class="circleInner">
+                <div class="textCircle center"></div></div>
+            </div>
+            <div class="textTopic"></div>
+            <div class="listTopic">
+                <lu></lu>
+            </div>
+        </div>
+    </template>
+    <template id="bannerTopic">
+        <div class="banner">
+            <div class="bannerCircleOuter">
+                <div class="bannerCircleInner">
+                    <div class="bannerTextCircle center"></div>
+                </div>
+            </div>
+            <div class="textBanner"></div>
+            <div class="containerLogo">
+                <img class="logoUCV" src="logo_ucv_blanco.png">
+                <img class="logo" src="ciencias_logo_blanco.png">
+                <img class="logo" src="computacion_logo_blanco.png">
+            </div>
+        </div>
+    </template>
+</head>
+<body>
+    <div id="container" class="container"></div>
+    <div id="containerBanners" class="containerBanners"></div>
+
+    <script>
+        const templateNoTopicBox = document.querySelector("#noTopicBox");
+        const templateTopicBox = document.querySelector("#topicBox");
+        const container = document.querySelector(".container");
+        let printScreenShot = "";
+        for(const [i, element] of learningRoute.entries()){
+            if (element["topic"]==="noTopic"){
+                const clone = templateNoTopicBox.content.cloneNode(true);
+                clone.querySelector(".textTitleNoTopic").innerHTML = element["title"];
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                printScreenShot += "\n:screenshot --dpr 3 --filename " + clone.querySelector(".box").id + ".png --selector #" + clone.querySelector(".box").id;
+                if(element["subtitle"]) {
+                    const subTitle = document.createElement("p");
+                    subTitle.innerHTML = element["subtitle"];
+                    if(element["description"]) {
+                        for(const item of element["description"]){
+                            subTitle.appendChild(document.createElement("br"));
+                            const description = document.createElement("span");
+                            description.innerHTML = item;
+                            subTitle.appendChild(description);
+                        }
+                    }
+                    clone.querySelector(".textDescriptionNoTopic").appendChild(subTitle);
+                }
+                if(element["background"]){
+                    clone.querySelector(".noTopicDirection").classList.add("noTopicBackground");
+                    clone.querySelector(".noTopicDirection").style.backgroundImage = "url('" + element["background"] + "')";
+                }
+                container.appendChild(clone);
+            } else {
+                const clone = templateTopicBox.content.cloneNode(true);
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                printScreenShot += "\n:screenshot --dpr 3 --filename " + clone.querySelector(".box").id + ".png --selector #" + clone.querySelector(".box").id;
+                clone.querySelector(".topic").classList.add(element["topic"]);
+                clone.querySelector(".textCircle").innerHTML = element["number"];
+                clone.querySelector(".textCircle").classList.add("textCircle" + element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1));
+                clone.querySelector(".textTopic").innerHTML = element["title"];
+                const lu = clone.querySelector(".listTopic").querySelector("lu");
+                for(const list of element["list"]){
+                    const li = document.createElement("li");
+                    li.innerHTML = list;
+                    lu.appendChild(li);
+                }
+                container.appendChild(clone);
+            }
+        }
+
+        let code = document.createElement('code');
+        code.innerText = printScreenShot;
+        container.appendChild(code);
+
+        const containerBanners = document.querySelector(".containerBanners");
+        const templateBannerTopic = document.querySelector("#bannerTopic");
+        for(const element of learningRoute){
+            const clone = templateBannerTopic.content.cloneNode(true);
+            clone.querySelector(".bannerTextCircle").innerHTML = element["number"];
+            clone.querySelector(".textBanner").innerHTML = element["title"].replace("<br>","");
+            const topicName = element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1);
+            clone.querySelector(".banner").classList.add("banner" + topicName);
+            clone.querySelector(".bannerTextCircle").classList.add("bannerTextCircle" + topicName);
+            containerBanners.appendChild(clone);
+        }
+    </script>
+
+    <script>
+        // remove duplicates from array
+        // http://www.etnassoft.com/2011/06/24/array-unique-eliminar-valores-duplicados-de-un-array-en-javascript/
+        Array.prototype.unique = function(a){
+            return function(){return this.filter(a)}
+        }(function(a,b,c){return c.indexOf(a,b+1)<0});
+
+        //var values
+        const root = document.querySelector(':root');
+        const rootVars = getComputedStyle(root);
+
+        // get CSS rules from style tag
+        const cssrules = document.styleSheets[0].cssRules;
+
+        for (const rule of cssrules){
+
+            const items = document.querySelectorAll(rule.selectorText);
+            
+            for (const item of items){
+                // add to previous styles
+                var style = item.getAttribute('style') || '';
+                style = style + ';' + rule.style.cssText;
+                // clean and remove duplicate styles
+                style = style.replace(/\s*(:|;|,|\(|\))\s*/g, '$1');
+                style = style.replace(/\s+/g, ' ');
+                const capturingRegex = /var\(([a-z-0-9,\s]+)\)/g;
+                const values = style.match(capturingRegex);
+                if(values){
+                    for(const value of values) {
+                        const rootVarValue = rootVars.getPropertyValue(value.replace('var(', '').replace(')', ''));
+                        style = style.replace(value, rootVarValue);
+                    }
+                }
+                style = style.split(';').unique().join(';');
+                // apply to tag
+                item.setAttribute('style',  style);
+                //item.removeAttribute("class");
+            }
+        }
+
+        for (const rule of cssrules){
+            const items = document.querySelectorAll(rule.selectorText);
+            for (const item of items){
+                item.removeAttribute("class");
+            }
+        }
+    </script>
+
+    <!-- INSTRUCCIONES
+        CAJAS
+        -----
+        . abrir la consola y sacar las instantaneas con:
+
+        :screenshot --dpr 3 --filename box8.png --selector #box8
+
+        dpr 3 indica un zoom
+        #boxN -> es el id de la caja
+        filename -> boxN.png
+
+        BANNERS
+        -------
+        . Inspeccionar y copiar el HTML externo
+        . cambiar el url de las imágenes de los logos por los del aula virtual:
+        agregar:
+            https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/
+
+        <img src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/logo_ucv_blanco.png"
+            style="width: 28px; height: 28px;" alt="logo UCV" />
+        <img
+            src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/ciencias_logo_blanco.png"
+            style="width: 24px; height: 24px;" alt="logo Facultad Ciencias" />
+        <img
+            src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/computacion_logo_blanco.png"
+            style="width: 24px; height: 24px;" alt="logo Escuela Computación" />
+
+    -->
+</body>
+</html>
