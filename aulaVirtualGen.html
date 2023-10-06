@@ -51,11 +51,11 @@
         const container = document.querySelector(".container");
         let printScreenShot = "";
         for(const [i, element] of learningRoute.entries()){
+            let clone;
             if (element["topic"]==="noTopic"){
-                const clone = templateNoTopicBox.content.cloneNode(true);
+                clone = templateNoTopicBox.content.cloneNode(true);
                 clone.querySelector(".textTitleNoTopic").innerHTML = element["title"];
                 clone.querySelector(".box").id = clone.querySelector(".box").id + i;
-                printScreenShot += "\n:screenshot --dpr 3 --filename " + clone.querySelector(".box").id + ".png --selector #" + clone.querySelector(".box").id;
                 if(element["subtitle"]) {
                     const subTitle = document.createElement("p");
                     subTitle.innerHTML = element["subtitle"];
@@ -73,11 +73,10 @@
                     clone.querySelector(".noTopicDirection").classList.add("noTopicBackground");
                     clone.querySelector(".noTopicDirection").style.backgroundImage = "url('" + element["background"] + "')";
                 }
-                container.appendChild(clone);
+                //container.appendChild(clone);
             } else {
-                const clone = templateTopicBox.content.cloneNode(true);
+                clone = templateTopicBox.content.cloneNode(true);
                 clone.querySelector(".box").id = clone.querySelector(".box").id + i;
-                printScreenShot += "\n:screenshot --dpr 3 --filename " + clone.querySelector(".box").id + ".png --selector #" + clone.querySelector(".box").id;
                 clone.querySelector(".topic").classList.add(element["topic"]);
                 clone.querySelector(".textCircle").innerHTML = element["number"];
                 clone.querySelector(".textCircle").classList.add("textCircle" + element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1));
@@ -88,13 +87,14 @@
                     li.innerHTML = list;
                     lu.appendChild(li);
                 }
-                container.appendChild(clone);
+                //container.appendChild(clone);
             }
+            clone.querySelector(".box").addEventListener("click",function (e, printScreenExe) {
+                alert("\n:screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this    .id);
+                //alert(this.id);
+              });
+              container.appendChild(clone);
         }
-
-        let code = document.createElement('code');
-        code.innerText = printScreenShot;
-        container.appendChild(code);
 
         const containerBanners = document.querySelector(".containerBanners");
         const templateBannerTopic = document.querySelector("#bannerTopic");
@@ -105,13 +105,24 @@
             const topicName = element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1);
             clone.querySelector(".banner").classList.add("banner" + topicName);
             clone.querySelector(".bannerTextCircle").classList.add("bannerTextCircle" + topicName);
+            clone.querySelector(".banner").addEventListener("click",function (e) {
+                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/';
+                let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
+                //console.log(outerHTML);
+                const el = document.createElement("textarea");
+                el.value = outerHTML;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand("copy");
+                document.body.removeChild(el);
+                alert('copiado');
+              });
             containerBanners.appendChild(clone);
         }
     </script>
 
     <script>
         // remove duplicates from array
-        // http://www.etnassoft.com/2011/06/24/array-unique-eliminar-valores-duplicados-de-un-array-en-javascript/
         Array.prototype.unique = function(a){
             return function(){return this.filter(a)}
         }(function(a,b,c){return c.indexOf(a,b+1)<0});
@@ -143,9 +154,7 @@
                     }
                 }
                 style = style.split(';').unique().join(';');
-                // apply to tag
                 item.setAttribute('style',  style);
-                //item.removeAttribute("class");
             }
         }
 
@@ -170,19 +179,11 @@
 
         BANNERS
         -------
-        . Inspeccionar y copiar el HTML externo
-        . cambiar el url de las imágenes de los logos por los del aula virtual:
-        agregar:
+        . subir los tres logos blanco al aula virtual
+        . cambiar el valor de campusURL por el url donde se subieron los logos:
             https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/
 
-        <img src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/logo_ucv_blanco.png"
-            style="width: 28px; height: 28px;" alt="logo UCV" />
-        <img
-            src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/ciencias_logo_blanco.png"
-            style="width: 24px; height: 24px;" alt="logo Facultad Ciencias" />
-        <img
-            src="https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/computacion_logo_blanco.png"
-            style="width: 24px; height: 24px;" alt="logo Escuela Computación" />
+        . hacer click en el banner y pegar el resultado en la descripción
 
     -->
 </body>
