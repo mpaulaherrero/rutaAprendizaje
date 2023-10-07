@@ -90,8 +90,9 @@
                 //container.appendChild(clone);
             }
             clone.querySelector(".box").addEventListener("click",function (e, printScreenExe) {
-                alert("\n:screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this    .id);
-                //alert(this.id);
+                navigator.clipboard.writeText(":screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this.id);
+                alert('copiado, ejecutar en la consola');
+                //document.execCommand(":screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this.id);
               });
               container.appendChild(clone);
         }
@@ -109,7 +110,7 @@
                 const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/';
                 let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
                 navigator.clipboard.writeText(outerHTML);
-                alert('copiado');
+                alert('copiado, pegar en el aula virtual');
               });
             containerBanners.appendChild(clone);
         }
