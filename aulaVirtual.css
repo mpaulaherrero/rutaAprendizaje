@@ -1,23 +1,3 @@
-:root {
-  --topic-font-family: Mina;
-  --circle-inner-background-color: #fff;
-  --banner-text-color: #fff;
-  --topic-text-color : #FFFFFF;
-  --no-topic-light-color : rgba(248, 235, 57, 1);
-  --no-topic-dark-color : rgba(242, 194, 21, 1);
-  --no-topic-text-color : rgb(102, 102, 102);
-  --topic-one-light-color : rgba(231, 26, 101, 1);
-  --topic-one-dark-color : rgba(194, 24, 91, 1);
-  --topic-two-light-color :rgba(43, 145, 186, 1);
-  --topic-two-dark-color : rgba(30, 116, 168, 1);
-  --topic-three-light-color :rgba(26, 145, 133, 1);
-  --topic-three-dark-color : rgba(27, 121, 107, 1);
-  --topic-four-light-color :rgba(76, 173, 79, 1);
-  --topic-four-dark-color : rgba(56, 142, 60, 1);
-  --topic-five-light-color :rgba(243, 152, 21, 1);
-  --topic-five-dark-color : rgba(240, 124, 23, 1);
-}
-
 .container {
 	width: 90%;
 	display: flex;
