@@ -1,0 +1,19 @@
+:root {
+  --topic-font-family: Mina;
+  --circle-inner-background-color: #fff;
+  --banner-text-color: #fff;
+  --topic-text-color : #FFFFFF;
+  --no-topic-light-color : #ffcb20;
+  --no-topic-dark-color : #ffc300;
+  --no-topic-text-color : rgb(102, 102, 102);
+  --topic-one-light-color : #0da167;
+  --topic-one-dark-color : #0b8d5a;
+  --topic-two-light-color :#0d91a1;
+  --topic-two-dark-color : #0b7f8d;
+  --topic-three-light-color :#0d47a1;
+  --topic-three-dark-color : #0b3e8d;
+  --topic-four-light-color :#670da1;
+  --topic-four-dark-color : #5a0b8d;
+  --topic-five-light-color :#a10d91;
+  --topic-five-dark-color : #8d0b7f;
+}
