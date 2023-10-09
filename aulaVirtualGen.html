@@ -91,9 +91,9 @@
                 //container.appendChild(clone);
             }
             clone.querySelector(".box").addEventListener("click",function (e, printScreenExe) {
-                navigator.clipboard.writeText(":screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this.id);
+                navigator.clipboard.writeText(":screenshot --dpr 50 --filename " + this.id + ".png --selector #" + this.id);
                 alert('copiado, ejecutar en la consola');
-                //document.execCommand(":screenshot --dpr 3 --filename " + this.id + ".png --selector #" + this.id);
+                //document.execCommand(":screenshot --dpr 4 --filename " + this.id + ".png --selector #" + this.id);
               });
               container.appendChild(clone);
         }
@@ -108,7 +108,7 @@
             clone.querySelector(".banner").classList.add("banner" + topicName);
             clone.querySelector(".bannerTextCircle").classList.add("bannerTextCircle" + topicName);
             clone.querySelector(".banner").addEventListener("click",function (e) {
-                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/';
+                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/843647733/';
                 let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
                 navigator.clipboard.writeText(outerHTML);
                 alert('copiado, pegar en el aula virtual');
@@ -128,7 +128,7 @@
         const rootVars = getComputedStyle(root);
 
         // get CSS rules from style tag
-        const cssrules = document.styleSheets[0].cssRules;
+        const cssrules = document.styleSheets[1].cssRules;
 
         for (const rule of cssrules){
 
@@ -167,7 +167,7 @@
         -----
         . abrir la consola y sacar las instantaneas con:
 
-        :screenshot --dpr 3 --filename box8.png --selector #box8
+        :screenshot --dpr 50 --filename box8.png --selector #box8
 
         dpr 3 indica un zoom
         #boxN -> es el id de la caja
@@ -177,7 +177,8 @@
         -------
         . subir los tres logos blanco al aula virtual
         . cambiar el valor de campusURL por el url donde se subieron los logos:
-            https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/
+            ATI: https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/
+            IS: https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/843647733/
 
         . hacer click en el banner y pegar el resultado en la descripción
 
