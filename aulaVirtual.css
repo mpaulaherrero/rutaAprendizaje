@@ -32,24 +32,24 @@
 
 .textTitleNoTopic {
   font-family : var(--topic-font-family);
-  font-size : 38px;
+  font-size : 42px;
   font-weight: 500;
-  line-height : 40px;
+  line-height : 44px;
 }
 
 .textDescriptionNoTopic {
   font-family : var(--topic-font-family);
-  font-size : 20px;
+  font-size : 24px;
   font-weight: 500;
-  line-height : 22px;
+  line-height : 28px;
   text-align: center;
 }
 
 .textTopic {
   font-family : var(--topic-font-family);
-  font-size : 18px;
+  font-size : 20px;
   font-weight: 500;
-  line-height : 20px;
+  line-height : 22px;
   width: 77%;
   height: 36px;
   display: flex;
@@ -58,8 +58,8 @@
 
 .listTopic {
   font-family : var(--topic-font-family);
-  font-size : 12px;
-  line-height : 14px;
+  font-size : 14px;
+  line-height : 16px;
   width: 100%;
   height: 65%;
 }
@@ -79,8 +79,8 @@
 }
 
 .circleOuter {
-  width : 40px;
-  height : 40px;
+  width : 44px;
+  height : 44px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px,
   				rgba(0, 0, 0, 0.12) 0px 2px 4px,
@@ -89,20 +89,21 @@
 				  rgba(0, 0, 0, 0.12) 0px 16px 32px,
 				  rgba(0, 0, 0, 0.12) 0px 32px 64px;
   display: flex;
+  margin-left: -5px;
 }
 
 .circleInner {
   background : var(--circle-inner-background-color);
-  width : 28px;
-  height : 28px;
+  width : 32px;
+  height : 32px;
   border-radius: 50%;
   margin: auto;
 }
 
 .textCircle {
   font-family : var(--topic-font-family);
-  font-weight : 500;
-  font-size : 16px;
+  font-weight : 700;
+  font-size : 20px;
 }
 
 .containerBanners {
@@ -380,4 +381,41 @@
 
 .bannerTextCircleTopicFiveDark {
 	color: var(--topic-five-dark-color);
+}
+
+/** topic six **/
+.topicSix {
+  background : var(--topic-six-light-color);
+  border-color : var(--topic-six-dark-color);
+  color : var(--topic-text-color);
+}
+
+.topicSixDark {
+   background : var(--topic-six-dark-color);
+   border-color : var(--topic-six-dark-color);
+   color :  var(--topic-text-color);
+}
+
+.textCircleTopicSix {
+	color : var(--topic-six-light-color);
+}
+
+.textCircleTopicSixDark {
+	color : var(--topic-six-dark-color);
+}
+
+.bannerTopicSix {
+	background: var(--topic-six-light-color);
+}
+
+.bannerTextCircleTopicSix {
+	color: var(--topic-six-light-color);
+}
+
+.bannerTopicSixDark {
+	background: var(--topic-six-dark-color);
+}
+
+.bannerTextCircleTopicSixDark {
+	color: var(--topic-six-dark-color);
 }
