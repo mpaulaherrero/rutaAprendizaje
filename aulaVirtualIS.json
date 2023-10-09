@@ -8,12 +8,12 @@ const learningRoute = [
 	  "title": "Ingeniería <br>de Software",
 	  "list": [
 			"¿Qué es la Ingeniería de Software?",
-			"Caracterización de la Ingenieria de Software",
+			"Caracterización de la Ingeniería de Software",
 			"Evolución de la Ingeniería de Software"]
 	},
 	{ "topic": "topicOne",
 	  "number": "02",
-	  "title": "Complejidad <br>del software",
+	  "title": "Complejidad <br>del Software",
 	  "list": [
 			"Complejidad inherente del software",
 			"Estrategias para reducir la complejidad del software",
@@ -31,15 +31,14 @@ const learningRoute = [
 	  "number": "04",
 	  "title": "Macro Disciplinas",
 	  "list": [
-			"Macro Disciplinas en el proceso de desarrollo de software",
-			"Modelado del dominio y requisitos",
+			"Modelo del dominio y requisitos",
 			"Análisis y diseño",
 			"Implementación, pruebas y despliegue",
 			"Gestión del ecosistema y gestión del proyecto"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "05",
-	  "title": "Procesos <br>de desarrollo",
+	  "title": "Procesos <br>de Desarrollo",
 	  "list": [
 			"Evolución de los modelos de desarrollo de software",
 			"Categoría de Procesos: pesados, livianos, prescriptivos y ágiles",
@@ -47,7 +46,7 @@ const learningRoute = [
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "06",
-	  "title": "Práctica 2",
+	  "title": "Práctica 2: UML",
 	  "list": [
 			"UML",
 			"Diagrama de Casos de Uso",
@@ -55,308 +54,325 @@ const learningRoute = [
 	},
 	{ "topic": "topicTwo",
 	  "number": "07",
-	  "title": "CSSAQUIIIII",
+	  "title": "RUP",
 	  "list": [
-			"Conceptos de Herencia, Cascada y Colisión de estilo",
-			"Ejemplos prácticos",
-			"Preprocesadores CSS [SASS, LESS]"]
+			"Métodos Iterativos",
+			"Modelo Rational Unified Process (RUP)",
+			"Casos de Usos y trazabilidad",
+			"Centrado en la arquitectura"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "08",
-	  "title": "JSON",
+	  "title": "XP",
 	  "list": [
-			"Datos, Internacionalización y localización",
-			"JSON para el intercambio de datos en  web",
-			"Comparación con XML"]
+			"Métodos Ágiles",
+			"Modelo eXtreme Programming (XP)",
+			"Técnicas ágiles de XP"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "09",
-	  "title": "JavaScript, JSON <br>y DOM",
+	  "title": "Práctica 3: UML",
 	  "list": [
-			"Usar JSON para el intercambio de datos",
-			"Usar el lenguaje de programación JavaScript para crear paginas web con comportamiento",
-			"Entender el DOM"]
+			"Diagrama de Clases",
+			"Diagrama de Actividades",
+			"Diagrama de Secuencia",
+			"Diagrama de Estado"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "10",
-	  "title": "JavaScript",
+	  "title": "Comparativa entre métodos",
 	  "list": [
-			"Comportamiento en una página web",
-			"Preprocesadores JavaScript [CoffeeScript, TypeScript]"]
+			"RUP vs XP vs Cascada",
+			"Ventajas y desventajas",
+			"cuándo usar"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "topicThree",
 	  "number": "11",
-	  "title": "Navegadores",
+	  "title": "Modelo Dominio",
 	  "list": [
-			"Motores de renderizado [Blink, Gecko, WebKit]",
-			"Creación del árbol DOM y de renderización",
-			"Solventar problemas presentes en el HTML: ejemplos prácticos"]
+			"¿Qué es el dominio?",
+			"Modelado del Negocio vs Modelo del Dominio",
+			"Diagrama de Clases",
+			"Diagrama de Estado",
+			"Diagrama de Objetos"]
 	},
-	{ "topic": "topicTwoDark",
+	{ "topic": "topicThreeDark",
 	  "number": "12",
-	  "title": "jQuery y Bootstrap",
+	  "title": "Práctica 4: Modelo Dominio",
 	  "list": [
-			"Crear páginas web con un javaScript más sencillo usando JQuery",
-			"Crear páginas web con Diseño Adaptativo"]
+			"Cómo crear un modelo del dominio",
+			"Distintos ejercicios para entender el modelo del dominio",
+			"Diagrama de Objetos"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "topicThree",
 	  "number": "13",
-	  "title": "Navegadores",
+	  "title": "Requisitos",
 	  "list": [
-			"Motor de renderizado: procesos de diseño y pintura",
-			"Motor de JavaScript [JavaScriptCore, V8]",
-			"Herramienta para desarrolladores"]
+			"Disciplina de Requisitos: actores y casos de uso",
+			"Especificación de Casos de Uso",
+			"Diagrama Casos de Uso"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "topicThree",
 	  "number": "14",
-	  "title": "Diseño Adaptativo",
+	  "title": "Prototipo Pantalla",
 	  "list": [
-			"Qué es un Framework JavaScript",
-			"Qué es el diseño Adaptativo",
-			"Formato de imágenes SVG y Webp"]
+			"Disciplina de Requisitos: prototipos de pantalla",
+			"Mapa de navegación",
+			"Principios básicos de interfaces (IHC)"]
 	},
-	{ "topic": "topicTwoDark",
+	{ "topic": "topicThreeDark",
 	  "number": "15",
-	  "title": "Docker, Apache HTTP",
+	  "title": "Práctica 5: Requisitos",
 	  "list": [
-			"Usar Docker para automatizar despliegues de aplicaciones web",
-			"Instalar, configurar y usar funcionalidades del servidor HTTP Apache e instalar el lenguaje PHP"]
+			"Especificar casos de uso",
+			"Diagrama de casos de uso",
+			"Crear prototipo de pantallas"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "topicFour",
 	  "number": "16",
-	  "title": "HTTP",
+	  "title": "Diseño <br>de Software",
 	  "list": [
-			"Protocolos de red [TCP/IP, HTTP, HTTP/2, HTTP/3]",
-			"Identificador de recursos [URL, URI, DNS]",
-			"Ataques de red, hombre  en el medio, Criptografía [SSH, HTTPS]"]
+			"Conceptos de diseño",
+			"Características y conceptos orientado a objeto"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "topicFour",
 	  "number": "17",
-	  "title": "Servidor web",
+	  "title": "Disciplina Análisis",
 	  "list": [
-			"Servidor HTTP Apache",
-			"Lenguajes de programación del lado servidor",
-			"Lenguajes de scripting [PHP]"]
+			"Análisis de la Arquitectura",
+			"Patrones, aquitecturas, documentación 4+1 vistas, MVC",
+			"Modelo de Análisis: Diagrama de clase de análisis"]
 	},
-	{ "topic": "topicTwoDark",
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Quiz 1",
+	  "subtitle": "Temas 1, 2 y 3"
+	},
+	{ "topic": "topicFour",
 	  "number": "18",
-	  "title": "PHP y AJAX",
+	  "title": "Modelo Análisis",
 	  "list": [
-			"Crear una cookie y establecer una sesión entre un navegador y el servidor web",
-			"Implementar peticiones HTTP en segundo plano usando la tecnología AJAX y JQuery"]
+			"Análisis de Caso de Uso",
+			"Análisis de Clase y Análisis de Paquete",
+			"Modelo de Análisis: Diagrama de paquetes de análisis y Diagramas de comunicación de los caso de uso"]
 	},
-	{ "topic": "topicTwo",
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Parcial 1",
+	  "subtitle": "Temas 1, 2 y 3"
+	},
+	{ "topic": "topicFourDark",
 	  "number": "19",
-	  "title": "Estado y sesión web",
+	  "title": "Práctica 6: Modelo Análisis",
 	  "list": [
-			"Sessiones HTTP, Cookies",
-			"Peticiones en segundo plano [XMLHttpRequest, AJAX]"]
+			"Diagrama de clase de análisis",
+			"Diagrama de paquetes de análisis",
+			"Diagramas de comunicación de los caso de uso"]
 	},
-	{ "topic": "noTopic",
-	  "number": "00",
-	  "title": "Evaluación",
-	  "subtitle": "Unidades 1 y 2"
-	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "20",
-	  "title": "Ingeniería Web",
+	  "title": "Disciplina Diseño",
 	  "list": [
-			"Naturaleza única de las aplicaciones web",
-			"Procesos de desarrollo  Web [XP, Scrum, TDD]",
-			"Proyecto: fases, artefactos a entregar y fechas"]
+			"Tecnologías",
+			"Clases abstractas, clases concretas",
+			"Sencillez, KISS, DRY, YAGNI, SOLID",
+			"Diseño de la Arquitectura",
+			"Modelo de Diseño: Diagrama de clase de diseño"]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "21",
-	  "title": "Requerimientos",
+	  "title": "Modelo Diseño",
 	  "list": [
-			"Ciclo de vida de un proyecto Web",
-			"Levantamiento de requerimientos [Historias de Usuario]",
-			"Funcionalidades principales presentes "]
+			"Diseño de Caso de Uso",
+			"Diseño de Clase y Diseño de paquetes",
+			"Modelo de Diseño: Diagrama de paquetes de diseño"]
 	},
-	{ "topic": "topicThreeDark",
+	{ "topic": "topicFourDark",
 	  "number": "22",
-	  "title": "GitHub",
+	  "title": "Práctica 7: JAVA",
 	  "list": [
-			"Gestión de tareas",
-			"Crear historias de usuario"]
+			"Lenguaje de programación Java",
+			"Nombrado, comentarios, buenas prácticas"]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "23",
-	  "title": "Administración <br>de proyectos",
+	  "title": "Enfoques <br>Diseño Software",
 	  "list": [
-			"Métricas, estimaciones, gestión de tareas, control de versiones",
-			"Gestión de tareas con GitHub, Kanban",
-			"Entornos de desarrollo, GitFlow"]
+			"Gran diseño primero",
+			"Diseño Evolutivo",
+			"Diseño Simple",
+			"Refactorización",
+			"Diseño suficiente"]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "24",
-	  "title": "Entornos de desarrollo web",
+	  "title": "Patrones <br>de diseño I",
 	  "list": [
-			"Sistema de control de versiones distribuido [Git]",
-			"Entornos de desarrollo  con Docker",
-			"DevOps",
-			"Integración Continua"
+			"Introducción a los Patrones de diseño",
+			"Factory method",
+			"Composite"
 		]
 	},
-	{ "topic": "topicThreeDark",
+	{ "topic": "topicFourDark",
 	  "number": "25",
-	  "title": "Entorno <br>de Desarrollo",
+	  "title": "Práctica 8: Modelo Diseño",
 	  "list": [
-			"Crear un entorno de desarrollo con Docker y Git",
-			"Crear el entorno de desarrollo para el proyecto usando el framework Flask   y la base de datos Mongo"
+			"Diagrama de clase con tecnología java",
+			"Diagrama de paquetes de diseño",
+			"diagrama de despliegue"
 		]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "26",
-	  "title": "Diseño de Aplicaciones",
+	  "title": "Patrones <br>de diseño II",
 	  "list": [
-			"Diseño, Modelos, Arquitectura de Información",
-			"UML, Modelo de datos, Mapas de Navegación, Wireframes de pantallas"]
+			"Template method",
+			"Observer"]
 	},
-	{ "topic": "topicThreeDark",
+	{ "topic": "topicFour",
 	  "number": "27",
-	  "title": "Figma",
+	  "title": "Patrones <br>de diseño III",
 	  "list": [
-			"Crear Wireframe de pantallas Mobile y Desktop",
-			"Aprender Figma"
+			"Singleton",
+			"Iterator"
 		]
 	},
-	{ "topic": "noTopic",
-	  "number": "00",
-	  "title": "Proyecto",
-	  "subtitle": "Entrega 1",
-	  "description": ["Requerimientos", "Entorno de desarrollo"]
-	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFourDark",
 	  "number": "28",
-	  "title": "Arquitectura <br>del software",
+	  "title": "Práctica 9: Patrones Diseño",
 	  "list": [
-			"Arquitectura del software [Cliente-Servidor, Arquitectura multicapa, Arquitectura Sistema]",
-			"Tipos de aplicaciones web según su arquitectura: MPA, SPA, PWA, Servicios Web"]
+			"Ejercicios de patrones con java",
+			"Factory method, Composite",
+			"Template method, Observer",
+			"Singleton, Iterator"]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFive",
 	  "number": "29",
-	  "title": "Prototipaje",
+	  "title": "Implementación",
 	  "list": [
-			"Diseño de Prototipos y lineamientos IHC",
-			"Tipo de interfaces para aplicaciones MPA"
+			"Disciplina de implementación",
+			"Implementar la Arquitectura",
+			"Implementar Clase",
+			"Implementar Pruebas Unitarias"
 		]
 	},
-	{ "topic": "topicThreeDark",
+	{ "topic": "topicFive",
 	  "number": "30",
-	  "title": "Prototipo Funcional",
+	  "title": "Pruebas Unitarias",
 	  "list": [
-			"Usar las plantillas básicas de Flask y bootstrap",
-			"Crear el prototipo  funcional con diseño adaptativo del proyecto"
+			"Qué es una prueba",
+			"Diseñar una prueba",
+			"Especificación de casos de prueba",
+			"Técnicas caja negra"
 		]
 	},
-	{ "topic": "topicFour",
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Quiz 2",
+	  "subtitle": "Tema 4"
+	},
+	{ "topic": "topicFive",
 	  "number": "31",
-	  "title": "BD NoSQL",
+	  "title": "Automatizar Pruebas Unitarias",
 	  "list": [
-			"Web 2.0, Big Data y base de datos NoSQL",
-			"MongoDB, PyMongo"]
+			"Técnicas caja blanca",
+			"Automatizar una prueba unitaria"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
-	  "title": "Proyecto",
-	  "subtitle": "Entrega 2",
-	  "description": ["Modelos"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "32",
-	  "title": "MongoDB",
-	  "list": [
-			"Crear una base de datos MongoDB",
-			"Implementar el modelo de datos del proyecto en Mongo"
-		]
-	},
-	{ "topic": "topicFour",
-	  "number": "33",
-	  "title": "Frameworks Web",
-	  "list": [
-			"Definición de Framework Web y pila tecnológica Web",
-			"Tipos de Frameworks Web según su aporte a la solución, su lenguaje de programación, el lugar donde se ejecutan y según arquitectura de la aplicación"]
-	},
-	{ "topic": "topicFour",
-	  "number": "34",
-	  "title": "BD NoSQL",
-	  "list": [
-			"Patrones de diseño usados en desarrollo web [MV*, DCI, Active Record, Inyección de dependencias]",
-			"Frameworks web MV*"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "35",
-	  "title": "Python/Flask",
-	  "list": [
-			"Crear una arquitectura MVC usando Flask y programar las funcionalidades básicas de una aplicación",
-			"Hacer módulo de usuario del proyecto: login, logout, sesion, registro y edición de usuario"
-		]
-	},
-	{ "topic": "noTopic",
-	  "number": "00",
-	  "title": "Proyecto",
-	  "subtitle": "Entrega 3",
-	  "description": ["Prototipo Funcional"]
-	},
-	{ "topic": "topicFour",
-	  "number": "36",
-	  "title": "Frameworks Web",
-	  "list": [
-			"Micro-framework y Full-stack framework en Python [Python, Flask, Django]",
-			"JavaScript en el servidor, entorno de ejecución y frameworks [node.js, express]"]
-	},
-	{ "topic": "topicFour",
-	  "number": "37",
-	  "title": "Servicio Web",
-	  "list": [
-			"Servicio Web, Microservicios y API Web [Twitter y Facebook]",
-			"Tecnología involucrada en Servicios Web [REST]",
-			"Tecnologías involucradas en APIs Web [OAuth 2, CURL]"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "38",
-	  "title": "API Web",
-	  "list": [
-			"Usar API web [Twitter, Facebook, Instagram]",
-			"Implementar la funcionalidad del proyecto que necesite de una API web "
-		]
-	},
-	{ "topic": "topicFive",
-	  "number": "39",
-	  "title": "Probando Aplicaciones",
-	  "list": [
-			"Probando aplicaciones web",
-			"¿Qué es una prueba?",
-			"Tipos de pruebas",
-			"Técnicas de prueba",
-			"Pruebas automáticas y herramientas"]
-	},
-	{ "topic": "topicFive",
-	  "number": "40",
-	  "title": "Pruebas Integración Continua",
-	  "list": [
-			"Pruebas automatizadas e integración continua [Selenium,  SonarQube, Cucumber, Jenkins]",
-			"Pruebas multiplataforma"]
+	  "title": "Parcial 2",
+	  "subtitle": "Tema 4"
 	},
 	{ "topic": "topicFiveDark",
-	  "number": "41",
-	  "title": "Probando Aplicaciones",
+	  "number": "32",
+	  "title": "Práctica 10: Implementación",
 	  "list": [
-			"Crear pruebas unitarias en Flask",
-			"Automatizar una prueba de carga con Selenium"
+			"Pasar diagramas de diseño a código java",
+			"Aplicar buenas prácticas y patrones de diseño"
 		]
 	},
-	{ "topic": "noTopic",
-	  "number": "00",
-	  "title": "Evaluación",
-	  "subtitle": "Unidades 3, 4 y 5"
+	{ "topic": "topicFive",
+	  "number": "33",
+	  "title": "Disciplina Pruebas",
+	  "list": [
+			"Tipos de pruebas",
+			"Pruebas funcionales y no funcionales",
+			"Verificar y validar",
+			"Pruebas de Integración, de Sistema, de componentes y de Aceptación",
+			"Pruebas estáticas y dinámicas"]
+	},
+	{ "topic": "topicFive",
+	  "number": "34",
+	  "title": "Integración Contínua",
+	  "list": [
+			"Qué es la Integración Contínua",
+			"Automatización de pruebas",
+			"GitFlow, Herramientas"]
+	},
+	{ "topic": "topicFiveDark",
+	  "number": "35",
+	  "title": "Práctica 11: Prueba Unitaria",
+	  "list": [
+			"Diseñar una prueba unitaria",
+			"Programar una prueba unitaria en java"
+		]
+	},
+	{ "topic": "topicSix",
+	  "number": "36",
+	  "title": "Historias <br>de usuario",
+	  "list": [
+			"Historias de usuario",
+			"Autor, roles, elementos",
+			"Historias técnicas",
+			"Comparación con los casos de uso"]
+	},
+	{ "topic": "topicSix",
+	  "number": "37",
+	  "title": "Diseño emergente",
+	  "list": [
+			"Cambios de requisitos",
+			"Diseño emergente",
+			"Código por pares",
+			"test-Driven Development (TDD)"]
+	},
+	{ "topic": "topicSixDark",
+	  "number": "38",
+	  "title": "Práctica 12: TDD",
+	  "list": [
+			"Cambio de requisito",
+			"TDD"
+		]
+	},
+	{ "topic": "topicSix",
+	  "number": "39",
+	  "title": "Refactoring",
+	  "list": [
+			"Baby steps",
+			"Smell codes",
+			"Catálogo de Refactorizaciones",
+			"Granularidad del Refactoring"]
+	},
+	{ "topic": "topicSixDark",
+	  "number": "40",
+	  "title": "Práctica 13: Refactoring",
+	  "list": [
+			"Arreglar código",
+			"Refactoring"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
 	  "title": "Proyecto",
-	  "subtitle": "Entrega 4",
-	  "description": ["Implementación <br>y Pruebas"]
+	  "subtitle": "Entrega"
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Quiz 3",
+	  "subtitle": "Temas 5 y 6"
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Parcial 3",
+	  "subtitle": "Temas 5 y 6"
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
