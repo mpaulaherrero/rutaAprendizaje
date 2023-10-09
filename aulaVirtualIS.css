@@ -10,10 +10,12 @@
   --topic-one-dark-color : #0b8d5a;
   --topic-two-light-color :#0d91a1;
   --topic-two-dark-color : #0b7f8d;
-  --topic-three-light-color :#0d47a1;
-  --topic-three-dark-color : #0b3e8d;
-  --topic-four-light-color :#670da1;
-  --topic-four-dark-color : #5a0b8d;
-  --topic-five-light-color :#a10d91;
-  --topic-five-dark-color : #8d0b7f;
+  --topic-three-light-color :#a10d91;
+  --topic-three-dark-color : #8d0b7f;
+  --topic-four-light-color :#0d47a1;
+  --topic-four-dark-color : #0b3e8d;
+  --topic-five-light-color :#670da1;
+  --topic-five-dark-color : #5a0b8d;
+  --topic-six-light-color :#a10d47;
+  --topic-six-dark-color : #8d0b3e;
 }
