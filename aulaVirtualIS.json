@@ -5,7 +5,7 @@ const learningRoute = [
 	},
 	{ "topic": "topicOne",
 	  "number": "01",
-	  "title": "Ingeniería de Software",
+	  "title": "Ingeniería <br>de Software",
 	  "list": [
 			"¿Qué es la Ingeniería de Software?",
 			"Caracterización de la Ingenieria de Software",
@@ -13,47 +13,49 @@ const learningRoute = [
 	},
 	{ "topic": "topicOne",
 	  "number": "02",
-	  "title": "Complejidad del software",
+	  "title": "Complejidad <br>del software",
 	  "list": [
 			"Complejidad inherente del software",
 			"Estrategias para reducir la complejidad del software",
 			"Proyecto Software: interrelación, ámbito, tiempo, coste y calidad"]
-	},,
+	},
 	{ "topic": "topicOneDark",
 	  "number": "03",
-	  "title": "Git",
+	  "title": "Práctica 1: <br>Git y Visual Code",
 	  "list": [
-			"Control de Versiones",
-			"Colaboración entre desarrolladores, respaldar el codigo, ver qué hizo quien"]
+			"GIT",
+			"GitFlow",
+			"Visual Code"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "04",
-	  "title": "HTML y DOM",
+	  "title": "Macro Disciplinas",
 	  "list": [
-			"Estructura, estilo, datos y comportamiento   y lenguajes soportados por el Navegador",
-			"HTML, XHTML, XML",
-			"Modelo de objeto del documento [DOM]"]
+			"Macro Disciplinas en el proceso de desarrollo de software",
+			"Modelado del dominio y requisitos",
+			"Análisis y diseño",
+			"Implementación, pruebas y despliegue",
+			"Gestión del ecosistema y gestión del proyecto"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "05",
-	  "title": "CSS",
+	  "title": "Procesos <br>de desarrollo",
 	  "list": [
-			"Lenguaje de estilo",
-			"Modelo de Cajas",
-			"Visualización y posicionamiento"]
+			"Evolución de los modelos de desarrollo de software",
+			"Categoría de Procesos: pesados, livianos, prescriptivos y ágiles",
+			"Modelo cascada"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "06",
-	  "title": "HTML5 y CSS3",
+	  "title": "Práctica 2",
 	  "list": [
-			"Crear páginas web con HTML5",
-			"Formas, Tablas",
-			"Crear páginas web con diseño en CSS3",
-			"Métodos básicos, animaciones"]
+			"UML",
+			"Diagrama de Casos de Uso",
+			"planUML"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "07",
-	  "title": "CSS",
+	  "title": "CSSAQUIIIII",
 	  "list": [
 			"Conceptos de Herencia, Cascada y Colisión de estilo",
 			"Ejemplos prácticos",
