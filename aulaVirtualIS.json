@@ -24,7 +24,6 @@ const learningRoute = [
 	  "title": "Práctica 1: <br>Git y Visual Code",
 	  "list": [
 			"GIT",
-			"GitFlow",
 			"Visual Code"]
 	},
 	{ "topic": "topicTwo",
@@ -84,7 +83,7 @@ const learningRoute = [
 	  "list": [
 			"RUP vs XP vs Cascada",
 			"Ventajas y desventajas",
-			"cuándo usar"]
+			"Cuándo usar"]
 	},
 	{ "topic": "topicThree",
 	  "number": "11",
@@ -106,9 +105,10 @@ const learningRoute = [
 	},
 	{ "topic": "topicThree",
 	  "number": "13",
-	  "title": "Requisitos",
+	  "title": "Disciplina Requisitos",
 	  "list": [
-			"Disciplina de Requisitos: actores y casos de uso",
+			"Disciplina de Requisitos",
+			"actores y casos de uso",
 			"Especificación de Casos de Uso",
 			"Diagrama Casos de Uso"]
 	},
@@ -140,7 +140,7 @@ const learningRoute = [
 	  "title": "Disciplina Análisis",
 	  "list": [
 			"Análisis de la Arquitectura",
-			"Patrones, aquitecturas, documentación 4+1 vistas, MVC",
+			"Patrones, arquitecturas, documentación 4+1 vistas, MVC",
 			"Modelo de Análisis: Diagrama de clase de análisis"]
 	},
 	{ "topic": "noTopic",
@@ -202,7 +202,7 @@ const learningRoute = [
 			"Diseño Evolutivo",
 			"Diseño Simple",
 			"Refactorización",
-			"Diseño suficiente"]
+			"Diseño Suficiente"]
 	},
 	{ "topic": "topicFour",
 	  "number": "24",
@@ -298,14 +298,14 @@ const learningRoute = [
 			"Tipos de pruebas",
 			"Pruebas funcionales y no funcionales",
 			"Verificar y validar",
-			"Pruebas de Integración, de Sistema, de componentes y de Aceptación",
+			"Pruebas de Integración, de Sistema, de Componentes y de Aceptación",
 			"Pruebas estáticas y dinámicas"]
 	},
 	{ "topic": "topicFive",
 	  "number": "34",
-	  "title": "Integración Contínua",
+	  "title": "Integración Continua",
 	  "list": [
-			"Qué es la Integración Contínua",
+			"Qué es la Integración Continua",
 			"Automatización de pruebas",
 			"GitFlow, Herramientas"]
 	},
@@ -373,6 +373,11 @@ const learningRoute = [
 	  "number": "00",
 	  "title": "Parcial 3",
 	  "subtitle": "Temas 5 y 6"
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Reparación",
+	  "subtitle": "Temas 1, 2, 3, <br>4, 5 y 6"
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
