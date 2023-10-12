@@ -8,14 +8,14 @@
   --no-topic-text-color : rgb(102, 102, 102);
   --topic-one-light-color : #0da167;
   --topic-one-dark-color : #0b8d5a;
-  --topic-two-light-color :#0d91a1;
-  --topic-two-dark-color : #0b7f8d;
-  --topic-three-light-color :#a10d91;
-  --topic-three-dark-color : #8d0b7f;
-  --topic-four-light-color :#0d47a1;
-  --topic-four-dark-color : #0b3e8d;
-  --topic-five-light-color :#670da1;
-  --topic-five-dark-color : #5a0b8d;
-  --topic-six-light-color :#a10d47;
-  --topic-six-dark-color : #8d0b3e;
+  --topic-two-light-color :#28c8de;
+  --topic-two-dark-color : #3eb5c6;
+  --topic-three-light-color :#27dec2;
+  --topic-three-dark-color : #3cc8b3;
+  --topic-four-light-color :#25de65;
+  --topic-four-dark-color : #3ac86b;
+  --topic-five-light-color :#289fde;
+  --topic-five-dark-color : #3d98c8;
+  --topic-six-light-color :#3f7bf2;
+  --topic-six-dark-color : #4e7cd7;
 }
