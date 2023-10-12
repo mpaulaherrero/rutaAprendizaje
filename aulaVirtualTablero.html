@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS Juego</title>
+    <link rel="stylesheet" type="text/css" href="aulaVirtualIS.css" />
+    <link rel="stylesheet" type="text/css" href="aulaVirtual.css" />
+    <link rel="stylesheet" type="text/css" href="aulaVirtualTablero.css" />
+    <script type="text/javascript" src="aulaVirtualIS.json"></script>
+    <template id="noTopicBox">
+        <div id="box" class="box noTopic">
+            <div class="noTopicDirection center">
+                <div class="textTitleNoTopic"></div>
+                <div class="textDescriptionNoTopic"></div>
+            </div>
+        </div>
+    </template>
+    <template id="topicBox">
+        <div id="box" class="box topic">
+            <div class="circleOuter"><div class="circleInner">
+                <div class="textCircle center"></div></div>
+            </div>
+            <div class="textTopic"></div>
+            <div class="listTopic">
+                <lu></lu>
+            </div>
+        </div>
+    </template>
+</head>
+<body>
+    <div id="container" class="container"></div>
+    <script>
+        const templateNoTopicBox = document.querySelector("#noTopicBox");
+        const templateTopicBox = document.querySelector("#topicBox");
+        const container = document.querySelector(".container");
+        let printScreenShot = "";
+        learningRoute.pop();
+        learningRoute.pop();
+        for(const [i, element] of learningRoute.entries()){
+            let clone;
+            if (element["topic"]==="noTopic"){
+                clone = templateNoTopicBox.content.cloneNode(true);
+                clone.querySelector(".textTitleNoTopic").innerHTML = element["title"];
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                if(element["subtitle"]) {
+                    const subTitle = document.createElement("p");
+                    subTitle.innerHTML = element["subtitle"];
+                    if(element["description"]) {
+                        for(const item of element["description"]){
+                            subTitle.appendChild(document.createElement("br"));
+                            const description = document.createElement("span");
+                            description.innerHTML = item;
+                            subTitle.appendChild(description);
+                        }
+                    }
+                    clone.querySelector(".textDescriptionNoTopic").appendChild(subTitle);
+                }
+                if(element["background"]){
+                    clone.querySelector(".noTopicDirection").classList.add("noTopicBackground");
+                    clone.querySelector(".noTopicDirection").style.backgroundImage = "url('" + element["background"] + "')";
+                }
+            } else {
+                clone = templateTopicBox.content.cloneNode(true);
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                clone.querySelector(".topic").classList.add(element["topic"]);
+                clone.querySelector(".textCircle").innerHTML = element["number"];
+                clone.querySelector(".textCircle").classList.add("textCircle" + element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1));
+                clone.querySelector(".textTopic").innerHTML = element["title"];
+                const lu = clone.querySelector(".listTopic").querySelector("lu");
+                for(const list of element["list"]){
+                    const li = document.createElement("li");
+                    li.innerHTML = list;
+                    lu.appendChild(li);
+                }
+            }
+            container.appendChild(clone);
+        }
+        const triangle = document.createElement("div");
+        triangle.classList.add("box");
+        triangle.classList.add("triangle");
+        triangle.id = "box" + learningRoute.length;
+        container.appendChild(triangle);
+        const prize = document.createElement("div");
+        prize.classList.add("box");
+        prize.classList.add("prize");
+        //prize.style.backgroundImage = "url('prize.png')";
+        prize.id = "box" + learningRoute.length + 1;
+        container.appendChild(prize);
+    </script>
+    <script>
+        let reverseBoxes = function () {
+            let flexItems = document.querySelectorAll(".box");
+            let flexItemPerLine = 10;
+            let lines = flexItems.length / flexItemPerLine;
+
+            for(let i=0; i < lines; i++){
+                let index = flexItemPerLine * i;
+                if( (i % 2) !== 0){
+                    for (let j = 0; j < flexItemPerLine; j++) {
+                        flexItems[index + j].style.order = (index + flexItemPerLine -1) - j;
+                        if(j===0 ){
+                            flexItems[index + j].classList.add("boxRightBottom" );
+                        }
+                        if(j===flexItemPerLine-1 ){
+                            flexItems[index + j].classList.add("boxLeftTop" );
+                        }
+                    }
+                } else {
+                    for (let j = 0; j < flexItemPerLine; j++) {
+                        flexItems[index + j].style.order = index +j;
+                        if(i!==0 && j===0){
+                            flexItems[index + j].classList.add("boxLeftBottom" );
+                        }
+                        if(j===flexItemPerLine-1 && index + j !== flexItems.length -1){
+                            flexItems[index + j].classList.add("boxRightTop" );
+                        }
+                    }
+                }
+            }
+        }
+        reverseBoxes();
+    </script>
+
+</body>
+</html>
