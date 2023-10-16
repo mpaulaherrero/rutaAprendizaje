@@ -93,6 +93,8 @@
             let flexItems = document.querySelectorAll(".box");
             let flexItemPerLine = 10;
             let lines = flexItems.length / flexItemPerLine;
+            document.querySelector(".container").style.width = (flexItemPerLine * document.querySelector(".box").offsetWidth) + "px";
+            document.querySelector(".container").style.margin = "auto";
 
             for(let i=0; i < lines; i++){
                 let index = flexItemPerLine * i;
