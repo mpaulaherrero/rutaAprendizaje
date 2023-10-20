@@ -28,12 +28,14 @@ const learningRoute = [
 	},
 	{ "topic": "topicTwo",
 	  "number": "04",
-	  "title": "Macro Disciplinas",
+	  "title": "Macro Proceso",
 	  "list": [
-			"Modelo del dominio y requisitos",
-			"Análisis y diseño",
-			"Implementación, pruebas y despliegue",
-			"Gestión del ecosistema y gestión del proyecto"]
+			"Proceso de desarrollo",
+			"Macro proceso",
+			"Dimensión Contenido",
+			"Dimensión Tiempo",
+			"Riesgos en el desarrollo de software",
+			"Importancia del proceso de desarrollo"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "05",
