@@ -43,7 +43,7 @@ const learningRoute = [
 	  "list": [
 			"Evolución de los modelos de desarrollo de software",
 			"Categoría de Procesos: pesados, livianos, prescriptivos y ágiles",
-			"Modelo cascada"]
+			"Modelo Cascada"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "06",
