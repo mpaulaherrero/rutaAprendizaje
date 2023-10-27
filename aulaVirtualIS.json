@@ -50,8 +50,10 @@ const learningRoute = [
 	  "title": "Práctica 2: UML",
 	  "list": [
 			"UML",
-			"Diagrama de Casos de Uso",
-			"planUML"]
+			"plantUML",
+			"Diagramas estructurales",
+			"Diagramas de Clases y Objetos",
+			"Diagrama de Paquetes"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "07",
