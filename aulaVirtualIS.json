@@ -42,8 +42,11 @@ const learningRoute = [
 	  "title": "Procesos <br>de Desarrollo",
 	  "list": [
 			"Evolución de los modelos de desarrollo de software",
-			"Categoría de Procesos: pesados, livianos, prescriptivos y ágiles",
-			"Modelo Cascada"]
+			"Categoría de Procesos",
+			"Evolución de los modelos de desarrollo",
+			"Modelo Cascada",
+			"Métodos Iterativos",
+			"Métodos Ágiles"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "06",
@@ -59,16 +62,14 @@ const learningRoute = [
 	  "number": "07",
 	  "title": "RUP",
 	  "list": [
-			"Métodos Iterativos",
-			"Modelo Rational Unified Process (RUP)",
-			"Casos de Usos y trazabilidad",
-			"Centrado en la arquitectura"]
+			"Modelos Unified Process",
+			"Refinamientos más conocidos",
+			"Rational Unified Process (RUP)"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "08",
 	  "title": "XP",
 	  "list": [
-			"Métodos Ágiles",
 			"Modelo eXtreme Programming (XP)",
 			"Técnicas ágiles de XP"]
 	},
@@ -76,9 +77,9 @@ const learningRoute = [
 	  "number": "09",
 	  "title": "Práctica 3: UML",
 	  "list": [
-			"Diagrama de Clases",
-			"Diagrama de Actividades",
 			"Diagrama de Secuencia",
+			"Diagrama de Comunicación",
+			"Diagrama de Actividades",
 			"Diagrama de Estado"]
 	},
 	{ "topic": "topicTwo",
