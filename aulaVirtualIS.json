@@ -70,8 +70,10 @@ const learningRoute = [
 	  "number": "08",
 	  "title": "XP",
 	  "list": [
-			"Modelo eXtreme Programming (XP)",
-			"Técnicas ágiles de XP"]
+			"Extreme Programming (XP)",
+			"Buenas Practicas",
+			"Actividades y Artefactos",
+			"Plan Estratégico"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "09",
@@ -88,7 +90,7 @@ const learningRoute = [
 	  "list": [
 			"RUP vs XP vs Cascada",
 			"Ventajas y desventajas",
-			"Cuándo usar"]
+			"Principios Ingeniería del Software"]
 	},
 	{ "topic": "topicThree",
 	  "number": "11",
