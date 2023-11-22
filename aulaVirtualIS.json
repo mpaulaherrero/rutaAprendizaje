@@ -96,11 +96,11 @@ const learningRoute = [
 	  "number": "11",
 	  "title": "Modelo Dominio",
 	  "list": [
-			"¿Qué es el dominio?",
-			"Modelado del Negocio vs Modelo del Dominio",
-			"Diagrama de Clases",
-			"Diagrama de Estado",
-			"Diagrama de Objetos"]
+			"¿Qué es el dominio y qué es un negocio?",
+			"Modelo del Dominio",
+			"Modelado del Negocio",
+			"Comparación",
+			"Modelando el dominio"]
 	},
 	{ "topic": "topicThreeDark",
 	  "number": "12",
@@ -114,18 +114,21 @@ const learningRoute = [
 	  "number": "13",
 	  "title": "Disciplina Requisitos",
 	  "list": [
+			"¿Qué es un requisito?",
+			"¿Qué es un sistema?",
+			"Captura de requisitos",
+			"Casos de Uso",
 			"Disciplina de Requisitos",
-			"actores y casos de uso",
-			"Especificación de Casos de Uso",
-			"Diagrama Casos de Uso"]
+			"Encontrar actores y casos de uso"]
 	},
 	{ "topic": "topicThree",
 	  "number": "14",
-	  "title": "Prototipo Pantalla",
+	  "title": "Especificar<br>Casos de Uso",
 	  "list": [
-			"Disciplina de Requisitos: prototipos de pantalla",
-			"Mapa de navegación",
-			"Principios básicos de interfaces (IHC)"]
+			"Priorizar Casos de Uso",
+			"Detallar Caso de Uso",
+			"Estructurar Casos de Uso",
+			"Prototipar Interfaz de Usuario"]
 	},
 	{ "topic": "topicThreeDark",
 	  "number": "15",
@@ -137,18 +140,18 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "16",
-	  "title": "Diseño <br>de Software",
+	  "title": "Disciplina Análisis",
 	  "list": [
-			"Conceptos de diseño",
-			"Características y conceptos orientado a objeto"]
+			"Disciplina de Análisis",
+			"Análisis de la Arquitectura",
+			"Análisis de Caso de Uso"]
 	},
 	{ "topic": "topicFour",
 	  "number": "17",
 	  "title": "Disciplina Análisis",
 	  "list": [
-			"Análisis de la Arquitectura",
-			"Patrones, arquitecturas, documentación 4+1 vistas, MVC",
-			"Modelo de Análisis: Diagrama de clase de análisis"]
+			"Análisis de Clase",
+			"Análisis de Paquete"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
