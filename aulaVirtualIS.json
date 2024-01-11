@@ -160,11 +160,11 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "18",
-	  "title": "Modelo Análisis",
+	  "title": "Diseño modular",
 	  "list": [
-			"Análisis de Caso de Uso",
-			"Análisis de Clase y Análisis de Paquete",
-			"Modelo de Análisis: Diagrama de paquetes de análisis y Diagramas de comunicación de los caso de uso"]
+			"Diseño modular",
+			"Nombres",
+			"SmellCode"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
@@ -181,67 +181,68 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "20",
-	  "title": "Disciplina Diseño",
+	  "title": "Retos revisión",
 	  "list": [
-			"Tecnologías",
-			"Clases abstractas, clases concretas",
-			"Sencillez, KISS, DRY, YAGNI, SOLID",
-			"Diseño de la Arquitectura",
-			"Modelo de Diseño: Diagrama de clase de diseño"]
+			"Reto 10 Prototipo",
+			"Reto 11 Análisis casos de uso"]
 	},
 	{ "topic": "topicFour",
 	  "number": "21",
-	  "title": "Modelo Diseño",
+	  "title": "Disciplina Diseño",
 	  "list": [
+			"Disciplina de diseño",
+			"Diseño de la Arquitectura",
 			"Diseño de Caso de Uso",
-			"Diseño de Clase y Diseño de paquetes",
-			"Modelo de Diseño: Diagrama de paquetes de diseño"]
+			"Diseño de Clase",
+			"Diseño de Paquete"]
 	},
 	{ "topic": "topicFourDark",
 	  "number": "22",
 	  "title": "Práctica 7: JAVA",
 	  "list": [
 			"Lenguaje de programación Java",
-			"Nombrado, comentarios, buenas prácticas"]
+			"Biblioteca IU Swing"]
 	},
 	{ "topic": "topicFour",
 	  "number": "23",
-	  "title": "Enfoques <br>Diseño Software",
+	  "title": "Revisión Reto <br>y Parcial",
 	  "list": [
-			"Gran diseño primero",
-			"Diseño Evolutivo",
-			"Diseño Simple",
-			"Refactorización",
-			"Diseño Suficiente"]
+			"Reto 12 Análisis Arquitectura",
+			"Parcial 1"]
 	},
 	{ "topic": "topicFour",
 	  "number": "24",
-	  "title": "Patrones <br>de diseño I",
+	  "title": "Diseño OO",
 	  "list": [
-			"Introducción a los Patrones de diseño",
-			"Factory method",
-			"Composite"
+			"Herencia",
+			"Delegación",
+			"Polimorfismo",
+			"Principios de diseño OO",
+			"Patrones de diseño"
 		]
 	},
 	{ "topic": "topicFourDark",
 	  "number": "25",
 	  "title": "Práctica 8: Modelo Diseño",
 	  "list": [
-			"Diagrama de clase con tecnología java",
-			"Diagrama de paquetes de diseño",
-			"diagrama de despliegue"
+			"Diagrama de clase de diseño de caso de uso representativo",
+			"Diagrama de secuencia de caso de uso representativo",
+			"Diagrama de traza entre clases de diseño y análisis",
+			"Diagrama de despliegue"
 		]
 	},
 	{ "topic": "topicFour",
 	  "number": "26",
-	  "title": "Patrones <br>de diseño II",
+	  "title": "Patrones <br>de diseño I",
 	  "list": [
-			"Template method",
-			"Observer"]
+			"Maratón de patrones I",
+			"Maratón de patrones II",
+			"Maratón de patrones III",
+		]
 	},
 	{ "topic": "topicFour",
 	  "number": "27",
-	  "title": "Patrones <br>de diseño III",
+	  "title": "Patrones <br>de diseño II",
 	  "list": [
 			"Singleton",
 			"Iterator"
