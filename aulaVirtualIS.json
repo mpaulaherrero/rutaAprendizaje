@@ -244,8 +244,9 @@ const learningRoute = [
 	  "number": "27",
 	  "title": "Patrones <br>de diseño II",
 	  "list": [
-			"Singleton",
-			"Iterator"
+			"Adaptador",
+			"Factoría",
+			"Singleton"
 		]
 	},
 	{ "topic": "topicFourDark",
@@ -253,29 +254,33 @@ const learningRoute = [
 	  "title": "Práctica 9: Patrones Diseño",
 	  "list": [
 			"Ejercicios de patrones con java",
-			"Factory method, Composite",
-			"Template method, Observer",
-			"Singleton, Iterator"]
+			"Adaptador",
+			"Factoría",
+			"Singleton"
+		]
 	},
 	{ "topic": "topicFive",
 	  "number": "29",
 	  "title": "Implementación",
 	  "list": [
 			"Disciplina de implementación",
-			"Implementar la Arquitectura",
 			"Implementar Clase",
-			"Implementar Pruebas Unitarias"
+			"Clases UML a código Java",
+			"Pruebas Unitarias",
+			"Smellcode"
 		]
 	},
 	{ "topic": "topicFive",
 	  "number": "30",
 	  "title": "Pruebas Unitarias",
 	  "list": [
-			"Qué es una prueba",
-			"Diseñar una prueba",
-			"Especificación de casos de prueba",
-			"Técnicas caja negra"
-		]
+		"Tipos de pruebas",
+		"Pruebas Unitarias",
+		"Casos de Pruebas",
+		"Diseñar Pruebas",
+		"Técnicas de Pruebas",
+		"Pruebas caja negra",
+		"Pruebas caja blanca"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
@@ -284,10 +289,11 @@ const learningRoute = [
 	},
 	{ "topic": "topicFive",
 	  "number": "31",
-	  "title": "Automatizar Pruebas Unitarias",
+	  "title": "Implementar Pruebas Unitarias",
 	  "list": [
-			"Técnicas caja blanca",
-			"Automatizar una prueba unitaria"]
+		"Diseño de prueba unitaria caja negra",
+		"Vector Ortogonal",
+		"Diseñar pruebas desde Casos de Uso"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
@@ -306,19 +312,22 @@ const learningRoute = [
 	  "number": "33",
 	  "title": "Disciplina Pruebas",
 	  "list": [
-			"Tipos de pruebas",
-			"Pruebas funcionales y no funcionales",
-			"Verificar y validar",
-			"Pruebas de Integración, de Sistema, de Componentes y de Aceptación",
-			"Pruebas estáticas y dinámicas"]
+		"Planificar Pruebas",
+		"Realizar Pruebas Integración",
+		"Realizar Pruebas Sistemas",
+		"Evaluar Pruebas",
+		"Integración continua",
+		"Automatización de pruebas",
+		"Herramientas para automatizar"]
 	},
-	{ "topic": "topicFive",
+	{ "topic": "topicSix",
 	  "number": "34",
-	  "title": "Integración Continua",
+	  "title": "Requisitos Ágiles",
 	  "list": [
-			"Qué es la Integración Continua",
-			"Automatización de pruebas",
-			"GitFlow, Herramientas"]
+		"Historias de usuario",
+		"Documento de requerimiento",
+		"Diseño de Pruebas e historias de usuario",
+		"Casos de uso vs Historias de usuario"]
 	},
 	{ "topic": "topicFiveDark",
 	  "number": "35",
@@ -330,42 +339,27 @@ const learningRoute = [
 	},
 	{ "topic": "topicSix",
 	  "number": "36",
-	  "title": "Historias <br>de usuario",
+	  "title": "Diseño emergente",
 	  "list": [
-			"Historias de usuario",
-			"Autor, roles, elementos",
-			"Historias técnicas",
-			"Comparación con los casos de uso"]
+			"Código por pares",
+			"Test-Driven Development (TDD)",
+			"Refactoring",
+			"Baby steps",
+			"Granularidad del Refactoring"]
 	},
 	{ "topic": "topicSix",
 	  "number": "37",
-	  "title": "Diseño emergente",
+	  "title": "Enfoques <br>Diseño Software",
 	  "list": [
-			"Cambios de requisitos",
-			"Diseño emergente",
-			"Código por pares",
-			"test-Driven Development (TDD)"]
+		"Gran diseño primero",
+		"Diseño Evolutivo",
+		"Diseño Simple",
+		"Diseño emergente",
+		"Diseño suficiente"]
 	},
 	{ "topic": "topicSixDark",
 	  "number": "38",
-	  "title": "Práctica 12: TDD",
-	  "list": [
-			"Cambio de requisito",
-			"TDD"
-		]
-	},
-	{ "topic": "topicSix",
-	  "number": "39",
-	  "title": "Refactoring",
-	  "list": [
-			"Baby steps",
-			"Smell codes",
-			"Catálogo de Refactorizaciones",
-			"Granularidad del Refactoring"]
-	},
-	{ "topic": "topicSixDark",
-	  "number": "40",
-	  "title": "Práctica 13: Refactoring",
+	  "title": "Práctica 12: Refactoring",
 	  "list": [
 			"Arreglar código",
 			"Refactoring"]
