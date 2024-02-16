@@ -341,11 +341,13 @@ const learningRoute = [
 	  "number": "36",
 	  "title": "Diseño emergente",
 	  "list": [
-			"Código por pares",
-			"Test-Driven Development (TDD)",
-			"Refactoring",
-			"Baby steps",
-			"Granularidad del Refactoring"]
+			"Diseño emergente",
+			"Refactorización",
+			"Buenas prácticas",
+			"Smellcodes",
+			"Mecanismos",
+			"Ejemplo",
+			"TDD"]
 	},
 	{ "topic": "topicSix",
 	  "number": "37",
