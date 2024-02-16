@@ -349,19 +349,19 @@ const learningRoute = [
 	},
 	{ "topic": "topicSix",
 	  "number": "37",
-	  "title": "Enfoques <br>Diseño Software",
+	  "title": "Enfoques<br>Diseño Software",
 	  "list": [
 		"Gran diseño primero",
-		"Diseño Evolutivo",
-		"Diseño Simple",
-		"Diseño emergente",
-		"Diseño suficiente"]
+		"Diseño Emergente",
+		"Diseño suficiente",
+		"Diseño iterativo",
+		"Diseño Simple"]
 	},
 	{ "topic": "topicSixDark",
 	  "number": "38",
-	  "title": "Práctica 12: Refactoring",
+	  "title": "Práctica 12: TDD<br>& Refactoring",
 	  "list": [
-			"Arreglar código",
+			"TDD",
 			"Refactoring"]
 	},
 	{ "topic": "noTopic",
