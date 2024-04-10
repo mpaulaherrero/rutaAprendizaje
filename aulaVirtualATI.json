@@ -5,22 +5,24 @@ const learningRoute = [
 	},
 	{ "topic": "topicOne",
 	  "number": "01",
-	  "title": "Fundamentos Tecnológicos",
+	  "title": "Fundamentos<br>Tecnológicos",
 	  "list": [
-			"Antecedentes históricos, tecnológicos y Evolución",
-			"Internet, Web, hipertexto e hipermedios, página web, sitio web, aplicación web"]
+			"Qué son internet y la web",
+			"Qué son documentos de hipertexto o hipermedias",
+			"Qué son una página web, un sitio web y una aplicación web"]
 	},
 	{ "topic": "topicOne",
 	  "number": "02",
-	  "title": "Navegadores",
+	  "title": "Aplicaciones<br>Web",
 	  "list": [
-			"Arquitectura y componentes básicos de una aplicación web", 
-			"Clientes Web",
-			"Responsabilidades, Interfaz, Arquitectura, y Lenguajes Soportados por los Navegadores"]
+			"Arquitectura y componentes básicos de una aplicación web",
+			"Lenguajes usados en el navegador",
+			"El Consorcio W3C y la WHATWG",
+			"Evolución de las aplicaciones web"]
 	},
 	{ "topic": "topicOneDark",
 	  "number": "03",
-	  "title": "Git",
+	  "title": "Laboratorio 1:<br>Git",
 	  "list": [
 			"Control de Versiones",
 			"Colaboración entre desarrolladores, respaldar el codigo, ver qué hizo quien"]
@@ -29,125 +31,148 @@ const learningRoute = [
 	  "number": "04",
 	  "title": "HTML y DOM",
 	  "list": [
-			"Estructura, estilo, datos y comportamiento   y lenguajes soportados por el Navegador",
-			"HTML, XHTML, XML",
-			"Modelo de objeto del documento [DOM]"]
+			"Lenguajes de Marcado",
+			"Qué es HTML",
+			"Qué es el DOM",
+			"Qué es XPath"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "05",
 	  "title": "CSS",
 	  "list": [
-			"Lenguaje de estilo",
+			"Qué es CSS",
 			"Modelo de Cajas",
-			"Visualización y posicionamiento"]
+			"Nuevo en CSS3"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "06",
-	  "title": "HTML5 y CSS3",
+	  "title": "Laboratorio 2:<br>HTML y CSS",
 	  "list": [
-			"Crear páginas web con HTML5",
-			"Formas, Tablas",
-			"Crear páginas web con diseño en CSS3",
+			"Crear páginas web con HTML",
+			"Diseño con CSS",
 			"Métodos básicos, animaciones"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "07",
-	  "title": "CSS",
+	  "title": "CSS Adaptable",
 	  "list": [
-			"Conceptos de Herencia, Cascada y Colisión de estilo",
-			"Ejemplos prácticos",
-			"Preprocesadores CSS [SASS, LESS]"]
+			"Reglas de estilos",
+			"Qué son la Herencia<br>y la Cascada",
+			"Cuadrículas flexibles<br>y media Queries",
+			"Multimedia Flexible"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "08",
-	  "title": "JSON",
+	  "title": "Lenguaje Intercambio",
 	  "list": [
-			"Datos, Internacionalización y localización",
-			"JSON para el intercambio de datos en  web",
-			"Comparación con XML"]
+			"Lenguajes para intercambio<br>de datos",
+			"XML vs JSON vs YAML",
+			"Formato de imágenes y videos"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "09",
-	  "title": "JavaScript, JSON <br>y DOM",
+	  "title": "Laboratorio 3:<br>CSS adaptable",
 	  "list": [
-			"Usar JSON para el intercambio de datos",
-			"Usar el lenguaje de programación JavaScript para crear paginas web con comportamiento",
-			"Entender el DOM"]
+			"Grillas flexibles",
+			"Media queries",
+			"Formatos de media flexibles"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "10",
 	  "title": "JavaScript",
 	  "list": [
-			"Comportamiento en una página web",
-			"Preprocesadores JavaScript [CoffeeScript, TypeScript]"]
+			"¿Qué es JavaScript?",
+			"Manipulando el DOM, eventos",
+			"JavaScript Asincrónico"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "11",
 	  "title": "Navegadores",
 	  "list": [
-			"Motores de renderizado [Blink, Gecko, WebKit]",
-			"Creación del árbol DOM y de renderización",
-			"Solventar problemas presentes en el HTML: ejemplos prácticos"]
+			"Los navegadores web",
+			"Arquitectura de un navegador",
+			"La interfaz de un navegador",
+			"Motor de navegador"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "12",
-	  "title": "jQuery y Bootstrap",
+	  "title": "Laboratorio 4:<br>JavaScript",
 	  "list": [
-			"Crear páginas web con un javaScript más sencillo usando JQuery",
-			"Crear páginas web con Diseño Adaptativo"]
+			"Intercambio de datos [JSON]",
+			"Crear paginas web con comportamiento [JavasSript]",
+			"Entender el DOM y los eventos"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "13",
-	  "title": "Navegadores",
+	  "title": "Motor<br>Renderizado",
 	  "list": [
-			"Motor de renderizado: procesos de diseño y pintura",
-			"Motor de JavaScript [JavaScriptCore, V8]",
-			"Herramienta para desarrolladores"]
+			"Motores de renderizado<br>[Blink, Gecko, WebKit]",
+			"Creación del árbol DOM,<br>CSSOM y de renderización",
+			"CSS render blocking"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "14",
-	  "title": "Diseño Adaptativo",
+	  "title": "Motor<br>Renderizado II",
 	  "list": [
-			"Qué es un Framework JavaScript",
-			"Qué es el diseño Adaptativo",
-			"Formato de imágenes SVG y Webp"]
+			"Procesos de diseño y pintura",
+			"Proceso de composición",
+			"Ejemplos de cascada"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "15",
-	  "title": "Docker, Apache HTTP",
+	  "title": "Laboratorio 5:<br>Navegador",
 	  "list": [
-			"Usar Docker para automatizar despliegues de aplicaciones web",
-			"Instalar, configurar y usar funcionalidades del servidor HTTP Apache e instalar el lenguaje PHP"]
+			"Herramienta para desarrolladores",
+			"Inspeccionar DOM,<br>CSS y reglas de diseño",
+			"Consola javascript<br>e inspeccionar pila"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "16",
-	  "title": "HTTP",
+	  "title": "Motor<br>JavaScript",
 	  "list": [
-			"Protocolos de red [TCP/IP, HTTP, HTTP/2, HTTP/3]",
-			"Identificador de recursos [URL, URI, DNS]",
-			"Ataques de red, hombre  en el medio, Criptografía [SSH, HTTPS]"]
+			"Motores de JavaScript [JavaScriptCore, V8]",
+			"Entorno de ejecución<br>y ejecución asincrónica",
+			"JavaScript render blocking"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "17",
-	  "title": "Servidor web",
+	  "title": "HTTP",
 	  "list": [
-			"Servidor HTTP Apache",
-			"Lenguajes de programación del lado servidor",
-			"Lenguajes de scripting [PHP]"]
+			"Protocolos de red [TCP/IP, HTTP, HTTP/2, HTTP/3]",
+			"Identificador de recursos<br>[URL, URI, DNS]",
+			"Ataques de red, hombre<br>en el medio, Criptografía<br>[SSH, HTTPS]"]
 	},
 	{ "topic": "topicTwoDark",
 	  "number": "18",
-	  "title": "PHP y AJAX",
+	  "title": "Laboratorio 6:<br>Servidor Apache",
 	  "list": [
-			"Crear una cookie y establecer una sesión entre un navegador y el servidor web",
-			"Implementar peticiones HTTP en segundo plano usando la tecnología AJAX y JQuery"]
+			"Automatizar despliegues<br>de aplicaciones[Docker]",
+			"Servidor HTTP Apache<br>y Python"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "19",
-	  "title": "Estado y sesión web",
+	  "title": "Servidor web",
+	  "list": [
+			"¿Qué es un servidor web?",
+			"Servidores web populares",
+			"Lenguajes del Servidor",
+			"¿Qué es Docker?"]
+	},
+	{ "topic": "topicTwo",
+	  "number": "20",
+	  "title": "Sesión Web",
 	  "list": [
 			"Sessiones HTTP, Cookies",
-			"Peticiones en segundo plano [XMLHttpRequest, AJAX]"]
+			"Peticiones en segundo plano [XMLHttpRequest, AJAX]",
+			"JavaScript multiprocesos y persistencia en el Navegador"]
+	},
+	{ "topic": "topicTwoDark",
+	  "number": "21",
+	  "title": "Laboratorio 7:<br>Sesiones HTTP",
+	  "list": [
+			"Crear una cookie",
+			"Establecer una sesión entre<br>un navegador y el servidor web",
+			"Tecnología AJAX"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
@@ -155,64 +180,86 @@ const learningRoute = [
 	  "subtitle": "Unidades 1 y 2"
 	},
 	{ "topic": "topicThree",
-	  "number": "20",
+	  "number": "22",
 	  "title": "Ingeniería Web",
 	  "list": [
-			"Naturaleza única de las aplicaciones web",
-			"Procesos de desarrollo  Web [XP, Scrum, TDD]",
-			"Proyecto: fases, artefactos a entregar y fechas"]
-	},
-	{ "topic": "topicThree",
-	  "number": "21",
-	  "title": "Requerimientos",
-	  "list": [
-			"Ciclo de vida de un proyecto Web",
-			"Levantamiento de requerimientos [Historias de Usuario]",
-			"Funcionalidades principales presentes "]
-	},
-	{ "topic": "topicThreeDark",
-	  "number": "22",
-	  "title": "GitHub",
-	  "list": [
-			"Gestión de tareas",
-			"Crear historias de usuario"]
+			"¿Qué es la ingeniería web?",
+			"Proceso de desarrollo de Software",
+			"Proceso de desarrollo Ágil<br>[XP, Scrum]"]
 	},
 	{ "topic": "topicThree",
 	  "number": "23",
-	  "title": "Administración <br>de proyectos",
+	  "title": "Requerimientos",
 	  "list": [
-			"Métricas, estimaciones, gestión de tareas, control de versiones",
-			"Gestión de tareas con GitHub, Kanban",
-			"Entornos de desarrollo, GitFlow"]
+			"Ciclo de vida de un proyecto",
+			"Propuesta, reunión de Kick-off, Stakeholders",
+			"¿Qué es un requerimiento?",
+			"Historias de usuario",
+			"Documento de Requerimientos"]
 	},
 	{ "topic": "topicThree",
 	  "number": "24",
-	  "title": "Entornos de desarrollo web",
+	  "title": "Administración<br>Proyectos",
 	  "list": [
-			"Sistema de control de versiones distribuido [Git]",
-			"Entornos de desarrollo  con Docker",
-			"DevOps",
-			"Integración Continua"
-		]
+			"Métricas de medición<br>del software",
+			"Estimación de proyectos<br>de aplicaciones web",
+			"Herramientas para gerencia<br>de proyectos",
+			"Entornos de desarrollo"]
 	},
 	{ "topic": "topicThreeDark",
 	  "number": "25",
-	  "title": "Entorno <br>de Desarrollo",
+	  "title": "Laboratorio 8:<br>Requisitos",
 	  "list": [
-			"Crear un entorno de desarrollo con Docker y Git",
-			"Crear el entorno de desarrollo para el proyecto usando el framework Flask   y la base de datos Mongo"
+			"Gestión de tareas con GitHub",
+			"Crear historias de usuario"
 		]
 	},
 	{ "topic": "topicThree",
 	  "number": "26",
-	  "title": "Diseño de Aplicaciones",
+	  "title": "Gestión Ecosistema",
 	  "list": [
-			"Diseño, Modelos, Arquitectura de Información",
-			"UML, Modelo de datos, Mapas de Navegación, Wireframes de pantallas"]
+			"Administrar ambientes<br>de desarrollo [Git]",
+			"Creando un entorno<br>de desarrollo [Docker]",
+			"Gestión del Ecosistema"
+		]
+	},
+	{ "topic": "topicThree",
+	  "number": "27",
+	  "title": "Diseño Aplicaciones",
+	  "list": [
+			"Diseño y modelado de software",
+			"Modelando Aplicaciones Web",
+			"Diseño Web y UX"]
 	},
 	{ "topic": "topicThreeDark",
-	  "number": "27",
-	  "title": "Figma",
+	  "number": "28",
+	  "title": "Laboratorio 9:<br>Ecosistema",
+	  "list": [
+			"Crear un entorno de desarrollo [Docker, Git]",
+			"Framework Django y la base de datos SQLite"
+		]
+	},
+	{ "topic": "topicThree",
+	  "number": "29",
+	  "title": "Arquitectura Software",
+	  "list": [
+			"Conceptos de diseño",
+			"Estilo arquitectónico web",
+			"Modelando la arquitectura",
+			"Tipos de aplicaciones web"]
+	},
+	{ "topic": "topicThree",
+	  "number": "30",
+	  "title": "Diseño Adaptativo",
+	  "list": [
+			"Internacionalización<br>y localización",
+			"Diseño web adaptativo<br>y Mobile-first",
+			"Bibliotecas JavaScript",
+			"Pruebas de diseño adaptable"]
+	},
+	{ "topic": "topicThreeDark",
+	  "number": "31",
+	  "title": "Laboratorio 10:<br>Figma",
 	  "list": [
 			"Crear Wireframe de pantallas Mobile y Desktop",
 			"Aprender Figma"
@@ -225,123 +272,83 @@ const learningRoute = [
 	  "description": ["Requerimientos", "Entorno de desarrollo"]
 	},
 	{ "topic": "topicThree",
-	  "number": "28",
-	  "title": "Arquitectura <br>del software",
-	  "list": [
-			"Arquitectura del software [Cliente-Servidor, Arquitectura multicapa, Arquitectura Sistema]",
-			"Tipos de aplicaciones web según su arquitectura: MPA, SPA, PWA, Servicios Web"]
-	},
-	{ "topic": "topicThree",
-	  "number": "29",
+	  "number": "32",
 	  "title": "Prototipaje",
 	  "list": [
-			"Diseño de Prototipos y lineamientos IHC",
-			"Tipo de interfaces para aplicaciones MPA"
+			"Diseño de interfaces",
+			"Prototipos",
+			"Usabilidad Web",
+			"Patrones de diseño",
+			"Aplicaciones web accesibles"
 		]
 	},
-	{ "topic": "topicThreeDark",
-	  "number": "30",
-	  "title": "Prototipo Funcional",
+	{ "topic": "topicFourDark",
+	  "number": "33",
+	  "title": "Laboratorio 11:<br>Django",
 	  "list": [
-			"Usar las plantillas básicas de Flask y bootstrap",
-			"Crear el prototipo  funcional con diseño adaptativo del proyecto"
+			"Crear una arquitectura MVC usando Django",
+			"Plantillas básicas de Django<br>y grillas CSS",
+			"Crear el prototipo funcional<br>con diseño adaptativo"
 		]
 	},
 	{ "topic": "topicFour",
-	  "number": "31",
-	  "title": "BD NoSQL",
+	  "number": "34",
+	  "title": "Frameworks Web",
 	  "list": [
-			"Web 2.0, Big Data y base de datos NoSQL",
-			"MongoDB, PyMongo"]
+			"¿Qué es un framework web?",
+			"Tipos de Frameworks Web",
+			"Herramientas",
+			"Patrones de diseño"]
+	},
+	{ "topic": "topicFour",
+	  "number": "35",
+	  "title": "MVC",
+	  "list": [
+			"Mantenibilidad",
+			"Estilo arquitectónico MV*",
+			"MV* en los Framework web"]
+	},
+	{ "topic": "topicFourDark",
+	  "number": "36",
+	  "title": "Laboratorio 12:<br>Administración",
+	  "list": [
+			"Módulo administrativo Django",
+			"Módulo de usuario",
+			"Usar Base de datos SQLigth"
+		]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",
 	  "title": "Proyecto",
 	  "subtitle": "Entrega 2",
-	  "description": ["Modelos"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "32",
-	  "title": "MongoDB",
-	  "list": [
-			"Crear una base de datos MongoDB",
-			"Implementar el modelo de datos del proyecto en Mongo"
-		]
-	},
-	{ "topic": "topicFour",
-	  "number": "33",
-	  "title": "Frameworks Web",
-	  "list": [
-			"Definición de Framework Web y pila tecnológica Web",
-			"Tipos de Frameworks Web según su aporte a la solución, su lenguaje de programación, el lugar donde se ejecutan y según arquitectura de la aplicación"]
-	},
-	{ "topic": "topicFour",
-	  "number": "34",
-	  "title": "BD NoSQL",
-	  "list": [
-			"Patrones de diseño usados en desarrollo web [MV*, DCI, Active Record, Inyección de dependencias]",
-			"Frameworks web MV*"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "35",
-	  "title": "Python/Flask",
-	  "list": [
-			"Crear una arquitectura MVC usando Flask y programar las funcionalidades básicas de una aplicación",
-			"Hacer módulo de usuario del proyecto: login, logout, sesion, registro y edición de usuario"
-		]
-	},
-	{ "topic": "noTopic",
-	  "number": "00",
-	  "title": "Proyecto",
-	  "subtitle": "Entrega 3",
-	  "description": ["Prototipo Funcional"]
-	},
-	{ "topic": "topicFour",
-	  "number": "36",
-	  "title": "Frameworks Web",
-	  "list": [
-			"Micro-framework y Full-stack framework en Python [Python, Flask, Django]",
-			"JavaScript en el servidor, entorno de ejecución y frameworks [node.js, express]"]
+	  "description": ["Diseño Aplicación", "Modelos"]
 	},
 	{ "topic": "topicFour",
 	  "number": "37",
-	  "title": "Servicio Web",
+	  "title": "Frameworks Web",
 	  "list": [
-			"Servicio Web, Microservicios y API Web [Twitter y Facebook]",
-			"Tecnología involucrada en Servicios Web [REST]",
-			"Tecnologías involucradas en APIs Web [OAuth 2, CURL]"]
-	},
-	{ "topic": "topicFourDark",
-	  "number": "38",
-	  "title": "API Web",
-	  "list": [
-			"Usar API web [Twitter, Facebook, Instagram]",
-			"Implementar la funcionalidad del proyecto que necesite de una API web "
+			"Preprocesadores de HTML y CSS",
+			"Lenguajes compilados a JavaScript",
+			"Caso de estudio: Flask, Django, Node.js, Express"
 		]
 	},
 	{ "topic": "topicFive",
-	  "number": "39",
+	  "number": "38",
 	  "title": "Probando Aplicaciones",
 	  "list": [
 			"Probando aplicaciones web",
 			"¿Qué es una prueba?",
 			"Tipos de pruebas",
-			"Técnicas de prueba",
-			"Pruebas automáticas y herramientas"]
-	},
-	{ "topic": "topicFive",
-	  "number": "40",
-	  "title": "Pruebas Integración Continua",
-	  "list": [
-			"Pruebas automatizadas e integración continua [Selenium,  SonarQube, Cucumber, Jenkins]",
-			"Pruebas multiplataforma"]
+			"Pruebas Unitarias",
+			"Pruebas automáticas"
+		]
 	},
 	{ "topic": "topicFiveDark",
-	  "number": "41",
-	  "title": "Probando Aplicaciones",
+	  "number": "39",
+	  "title": "Laboratorio 13:<br>Pruebas Unitarias",
 	  "list": [
-			"Crear pruebas unitarias en Flask",
-			"Automatizar una prueba de carga con Selenium"
+			"Crear pruebas unitarias [Django]",
+			"Definir la integración continua [GitActions]"
 		]
 	},
 	{ "topic": "noTopic",
@@ -352,8 +359,8 @@ const learningRoute = [
 	{ "topic": "noTopic",
 	  "number": "00",
 	  "title": "Proyecto",
-	  "subtitle": "Entrega 4",
-	  "description": ["Implementación <br>y Pruebas"]
+	  "subtitle": "Entrega 3",
+	  "description": ["Implementacion", "Pruebas"]
 	},
 	{ "topic": "noTopic",
 	  "number": "00",

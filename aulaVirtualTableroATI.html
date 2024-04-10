@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IS Juego</title>
-    <link rel="stylesheet" type="text/css" href="aulaVirtualIS.css" />
+    <link rel="stylesheet" type="text/css" href="aulaVirtualATI.css" />
     <link rel="stylesheet" type="text/css" href="aulaVirtual.css" />
     <link rel="stylesheet" type="text/css" href="aulaVirtualTablero.css" />
-    <script type="text/javascript" src="aulaVirtualIS.json"></script>
+    <script type="text/javascript" src="aulaVirtualATI.json"></script>
     <template id="noTopicBox">
         <div id="box" class="box noTopic">
             <div class="noTopicDirection center">
@@ -40,7 +40,7 @@
         const container = document.querySelector(".container");
         let printScreenShot = "";
         learningRoute.pop();
-        learningRoute.pop();
+        //learningRoute.pop();
         for (const [i, element] of learningRoute.entries()) {
             let clone;
             if (element["topic"] === "noTopic") {
