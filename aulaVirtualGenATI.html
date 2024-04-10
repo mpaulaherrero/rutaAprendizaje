@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATI Juego</title>
+    <link rel="stylesheet" type="text/css" href="aulaVirtualATI.css" />
+    <link rel="stylesheet" type="text/css" href="aulaVirtual.css" />
+    <script type="text/javascript" src="aulaVirtualATI.json"></script>
+    <template id="noTopicBox">
+        <div id="box" class="box noTopic">
+            <div class="noTopicDirection center">
+                <div class="textTitleNoTopic"></div>
+                <div class="textDescriptionNoTopic"></div>
+            </div>
+        </div>
+    </template>
+    <template id="topicBox">
+        <div id="box" class="box topic">
+            <div class="circleOuter">
+                <div class="circleInner">
+                    <div class="textCircle center"></div>
+                </div>
+            </div>
+            <div class="textTopic"></div>
+            <div class="listTopic">
+                <lu></lu>
+            </div>
+        </div>
+    </template>
+    <template id="bannerTopic">
+        <div class="banner">
+            <div class="bannerCircleOuter">
+                <div class="bannerCircleInner">
+                    <div class="bannerTextCircle center"></div>
+                </div>
+            </div>
+            <div class="textBanner"></div>
+            <div class="containerLogo">
+                <img class="logoUCV" src="logo_ucv_blanco.png">
+                <img class="logo" src="ciencias_logo_blanco.png">
+                <img class="logo" src="computacion_logo_blanco.png">
+            </div>
+        </div>
+    </template>
+</head>
+
+<body>
+    <div id="container" class="container"></div>
+    <div id="containerBanners" class="containerBanners"></div>
+
+    <script>
+        const templateNoTopicBox = document.querySelector("#noTopicBox");
+        const templateTopicBox = document.querySelector("#topicBox");
+        const container = document.querySelector(".container");
+        let printScreenShot = "";
+        for (const [i, element] of learningRoute.entries()) {
+            let clone;
+            if (element["topic"] === "noTopic") {
+                clone = templateNoTopicBox.content.cloneNode(true);
+                clone.querySelector(".textTitleNoTopic").innerHTML = element["title"];
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                if (element["subtitle"]) {
+                    const subTitle = document.createElement("p");
+                    subTitle.innerHTML = element["subtitle"];
+                    if (element["description"]) {
+                        for (const item of element["description"]) {
+                            subTitle.appendChild(document.createElement("br"));
+                            const description = document.createElement("span");
+                            description.innerHTML = item;
+                            subTitle.appendChild(description);
+                        }
+                    }
+                    clone.querySelector(".textDescriptionNoTopic").appendChild(subTitle);
+                }
+                if (element["background"]) {
+                    clone.querySelector(".noTopicDirection").classList.add("noTopicBackground");
+                    clone.querySelector(".noTopicDirection").style.backgroundImage = "url('" + element["background"] + "')";
+                }
+                //container.appendChild(clone);
+            } else {
+                clone = templateTopicBox.content.cloneNode(true);
+                clone.querySelector(".box").id = clone.querySelector(".box").id + i;
+                clone.querySelector(".topic").classList.add(element["topic"]);
+                clone.querySelector(".textCircle").innerHTML = element["number"];
+                clone.querySelector(".textCircle").classList.add("textCircle" + element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1));
+                clone.querySelector(".textTopic").innerHTML = element["title"];
+                const lu = clone.querySelector(".listTopic").querySelector("lu");
+                for (const list of element["list"]) {
+                    const li = document.createElement("li");
+                    li.innerHTML = list;
+                    lu.appendChild(li);
+                }
+                //container.appendChild(clone);
+            }
+            clone.querySelector(".box").addEventListener("click", function (e, printScreenExe) {
+                navigator.clipboard.writeText(":screenshot --dpr 50 --filename " + this.id + ".png --selector #" + this.id);
+                alert('copiado, ejecutar en la consola');
+                //document.execCommand(":screenshot --dpr 4 --filename " + this.id + ".png --selector #" + this.id);
+            });
+            container.appendChild(clone);
+        }
+
+        const containerBanners = document.querySelector(".containerBanners");
+        const templateBannerTopic = document.querySelector("#bannerTopic");
+        for (const element of learningRoute) {
+            const clone = templateBannerTopic.content.cloneNode(true);
+            clone.querySelector(".bannerTextCircle").innerHTML = element["number"];
+            clone.querySelector(".textBanner").innerHTML = element["title"].replace("<br>", "");
+            const topicName = element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1);
+            clone.querySelector(".banner").classList.add("banner" + topicName);
+            clone.querySelector(".bannerTextCircle").classList.add("bannerTextCircle" + topicName);
+            clone.querySelector(".banner").addEventListener("click", function (e) {
+                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/377524398/';
+                let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
+                navigator.clipboard.writeText(outerHTML);
+                alert('copiado, pegar en el aula virtual');
+            });
+            containerBanners.appendChild(clone);
+        }
+    </script>
+
+    <script>
+        // remove duplicates from array
+        Array.prototype.unique = function (a) {
+            return function () { return this.filter(a) }
+        }(function (a, b, c) { return c.indexOf(a, b + 1) < 0 });
+
+        //var values
+        const root = document.querySelector(':root');
+        const rootVars = getComputedStyle(root);
+
+        // get CSS rules from style tag
+        const cssrules = document.styleSheets[1].cssRules;
+
+        for (const rule of cssrules) {
+
+            const items = document.querySelectorAll(rule.selectorText);
+
+            for (const item of items) {
+                // add to previous styles
+                var style = item.getAttribute('style') || '';
+                style = style + ';' + rule.style.cssText;
+                // clean and remove duplicate styles
+                style = style.replace(/\s*(:|;|,|\(|\))\s*/g, '$1');
+                style = style.replace(/\s+/g, ' ');
+                const capturingRegex = /var\(([a-z-0-9,\s]+)\)/g;
+                const values = style.match(capturingRegex);
+                if (values) {
+                    for (const value of values) {
+                        const rootVarValue = rootVars.getPropertyValue(value.replace('var(', '').replace(')', ''));
+                        style = style.replace(value, rootVarValue);
+                    }
+                }
+                style = style.split(';').unique().join(';');
+                item.setAttribute('style', style);
+            }
+        }
+
+        for (const rule of cssrules) {
+            const items = document.querySelectorAll(rule.selectorText);
+            for (const item of items) {
+                item.removeAttribute("class");
+            }
+        }
+    </script>
+
+    <!-- INSTRUCCIONES
+        CAJAS
+        -----
+        . abrir la consola y sacar las instantaneas con:
+
+        :screenshot --dpr 50 --filename box8.png --selector #box8
+
+        dpr 3 indica un zoom
+        #boxN -> es el id de la caja
+        filename -> boxN.png
+
+        BANNERS
+        -------
+        . subir los tres logos blanco al aula virtual
+        . cambiar el valor de campusURL por el url donde se subieron los logos:
+            ATI: https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/761441623/
+            IS: https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/377524398/
+            DAM: https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/129269564/
+
+        . hacer click en el banner y pegar el resultado en la descripción
+
+    -->
+</body>
+
+</html>
