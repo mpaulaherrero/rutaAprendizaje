@@ -107,12 +107,12 @@
         for (const element of learningRoute) {
             const clone = templateBannerTopic.content.cloneNode(true);
             clone.querySelector(".bannerTextCircle").innerHTML = element["number"];
-            clone.querySelector(".textBanner").innerHTML = element["title"].replace("<br>", "");
+            clone.querySelector(".textBanner").innerHTML = element["title"].replace("<br>", " ");
             const topicName = element["topic"].charAt(0).toUpperCase() + element["topic"].slice(1);
             clone.querySelector(".banner").classList.add("banner" + topicName);
             clone.querySelector(".bannerTextCircle").classList.add("bannerTextCircle" + topicName);
             clone.querySelector(".banner").addEventListener("click", function (e) {
-                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/377524398/';
+                const campusURL = 'https://campusvirtualucv.org/ead/draftfile.php/159915/user/draft/702029175/';
                 let outerHTML = this.outerHTML.replaceAll('src="', 'src="' + campusURL);
                 navigator.clipboard.writeText(outerHTML);
                 alert('copiado, pegar en el aula virtual');
