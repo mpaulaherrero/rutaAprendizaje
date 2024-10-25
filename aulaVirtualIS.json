@@ -140,16 +140,18 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "16",
-	  "title": "Disciplina Análisis",
+	  "title": "Retos revisión",
 	  "list": [
-			"Disciplina de Análisis",
-			"Análisis de la Arquitectura",
-			"Análisis de Caso de Uso"]
+			"Reto 07 Diagrama de clases negocio",
+			"Reto 08 Diagrama de estado negocio"]
 	},
 	{ "topic": "topicFour",
 	  "number": "17",
 	  "title": "Disciplina Análisis",
 	  "list": [
+			"Disciplina de Análisis",
+			"Análisis de la Arquitectura",
+			"Análisis de Caso de Uso",
 			"Análisis de Clase",
 			"Análisis de Paquete"]
 	},
@@ -345,8 +347,7 @@ const learningRoute = [
 			"Refactorización",
 			"Buenas prácticas",
 			"Smellcodes",
-			"Mecanismos",
-			"Ejemplo",
+			"Mecanismos y ejemplo",
 			"TDD"]
 	},
 	{ "topic": "topicSix",
