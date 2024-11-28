@@ -137,7 +137,7 @@ const learningRoute = [
 			"Diagrama de casos de uso",
 			"Crear prototipo de pantallas"]
 	},
-	{ "topic": "topicFour",
+	{ "topic": "topicThree",
 	  "number": "16",
 	  "title": "Prototipar Interfaz",
 	  "list": [
