@@ -118,17 +118,16 @@ const learningRoute = [
 			"¿Qué es un sistema?",
 			"Captura de requisitos",
 			"Casos de Uso",
-			"Disciplina de Requisitos",
-			"Encontrar actores y casos de uso"]
+			"Disciplina de Requisitos"]
 	},
 	{ "topic": "topicThree",
 	  "number": "14",
 	  "title": "Especificar<br>Casos de Uso",
 	  "list": [
+			"Encontrar actores y casos de uso",
 			"Priorizar Casos de Uso",
 			"Detallar Caso de Uso",
-			"Estructurar Casos de Uso",
-			"Prototipar Interfaz de Usuario"]
+			"Estructurar Casos de Uso"]
 	},
 	{ "topic": "topicThreeDark",
 	  "number": "15",
@@ -140,10 +139,12 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "16",
-	  "title": "Retos revisión",
+	  "title": "Prototipar Interfaz",
 	  "list": [
 			"Reto 07 Diagrama de clases negocio",
-			"Reto 08 Diagrama de estado negocio"]
+			"Reto 08 Diagrama de estado negocio",
+			"Prototipar Interfaz de Usuario",
+			"Ejemplos"]
 	},
 	{ "topic": "topicFour",
 	  "number": "17",
@@ -185,8 +186,8 @@ const learningRoute = [
 	  "number": "20",
 	  "title": "Retos revisión",
 	  "list": [
-			"Reto 10 Prototipo",
-			"Reto 11 Análisis casos de uso"]
+			"Reto 09 Casos de uso y actores",
+			"Reto 10 Prototipo"]
 	},
 	{ "topic": "topicFour",
 	  "number": "21",
@@ -207,10 +208,10 @@ const learningRoute = [
 	},
 	{ "topic": "topicFour",
 	  "number": "23",
-	  "title": "Revisión Reto <br>y Parcial",
+	  "title": "Revisión Retos",
 	  "list": [
-			"Reto 12 Análisis Arquitectura",
-			"Parcial 1"]
+			"Reto 11 Análisis Clases",
+			"Reto 12 Análisis Arquitectura"]
 	},
 	{ "topic": "topicFour",
 	  "number": "24",
