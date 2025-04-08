@@ -124,7 +124,7 @@ const learningRoute = [
 	  "title": "Laboratorio 5:<br> Navegador",
 	  "list": [
 			"Motor de renderizado",
-			"Motor de renderizado"]
+			"Motor de javascript"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "16",
