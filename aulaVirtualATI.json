@@ -59,7 +59,8 @@ const learningRoute = [
 	  "list": [
 			"¿Qué es JavaScript?",
 			"Funciones y objetos",
- 			"Clases y módulos"]
+ 			"Clases y módulos",
+			"JSON"]
 	},
 	{ "topic": "topicTwo",
 	  "number": "08",
