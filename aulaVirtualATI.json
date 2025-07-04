@@ -254,9 +254,11 @@ const learningRoute = [
 	  "number": "29",
 	  "title": "Arquitectura Software",
 	  "list": [
-			"Tipos de aplicaciones web",
 			"Diseño de software",
-			"Estilo arquitectónico web"]
+			"Tipos de aplicaciones web",
+			"Estilo arquitectónico web",
+			"Diseñando con Essence",
+			"Modelando la arquitectura"]
 	},
 	{ "topic": "topicThreeDark",
 	  "number": "30",
