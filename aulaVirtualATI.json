@@ -269,26 +269,24 @@ const learningRoute = [
 			"Diagrama de clases y de arquitectura"
 		]
 	},
-	{ "topic": "topicThree",
+	{ "topic": "topicFour",
 	  "number": "31",
-	  "title": "MVC",
+	  "title": "Frameworks Web",
 	  "list": [
-			"Mantenibilidad",
-			"Estilo arquitectónico MV*",
-			"Modelando la arquitectura",
+			"Framework web",
+			"Tipos de Frameworks Web",
+			"Herramientas",
 			"Preprocesadores de HTML y CSS",
 			"Lenguajes compilados a JavaScript",
 			]
 	},
 	{ "topic": "topicFour",
 	  "number": "32",
-	  "title": "Frameworks Web",
+	  "title": "MVC",
 	  "list": [
-			"¿Qué es un framework web?",
-			"Tipos de Frameworks Web",
-			"Herramientas",
 			"Patrones de diseño",
-			"MV* en los Framework web"]
+			"Estilo arquitectónico MV*",
+			"MV* en los framework web"]
 	},
 	{ "topic": "topicFourDark",
 	  "number": "33",
