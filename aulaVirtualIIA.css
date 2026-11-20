@@ -1,0 +1,17 @@
+:root {
+  --topic-font-family: Arial;
+  --circle-inner-background-color: #fff;
+  --banner-text-color: #fff;
+  --topic-text-color : #FFFFFF;
+  --no-topic-light-color : #ffcb20;
+  --no-topic-dark-color : #ffc300;
+  --no-topic-text-color : rgb(102, 102, 102);
+  --topic-one-light-color : #E75945;
+  --topic-one-dark-color : #A93929;
+  --topic-two-light-color :#2F8BD2;
+  --topic-two-dark-color : #2071B0;
+  --topic-three-light-color :#0da167;
+  --topic-three-dark-color : #0b8d5a;
+  --topic-four-light-color :#F78D3B;
+  --topic-four-dark-color : #CD7531;
+}

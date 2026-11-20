@@ -1,0 +1,178 @@
+const learningRoute = [
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Inicio"
+	},
+	{ "topic": "topicOne",
+	  "number": "01",
+	  "title": "Fundamentos<br>Conceptuales",
+	  "list": [
+			"Conceptos de Inteligencia",
+			"Mitos y Leyendas",
+			"La IA en la Literatura"]
+	},
+	{ "topic": "topicOne",
+	  "number": "02",
+	  "title": "Fundamentos<br>Históricos",
+	  "list": [
+			"Los Autómatas y la Ingeniería",
+			"La Máquina de Turing",
+			"Arquitectura de Von Neuman",
+			"Teoría de la información de Shannon",
+			"Conferencia de Dartmouth"]
+	},
+	{ "topic": "topicOne",
+	  "number": "03",
+	  "title": "Fundamentos<br>Filosóficos",
+	  "list": [
+			"La Máquina Pensante",
+			"Dualismo Ontológico",
+			"Materialismo",
+			"Fenómenos Emergentes"]
+	},
+	{ "topic": "topicOne",
+	  "number": "04",
+	  "title": "Fundamentos<br>Matemáticos",
+	  "list": [
+			"Gramática del Razonamiento",
+			"Álgebra del Pensamiento",
+			"Lógica Simbólica",
+			"Conexionismo",
+			"LLM y los fenómenos emergentes"]
+	},
+	{ "topic": "topicOne",
+	  "number": "05",
+	  "title": "Inteligencia<br>Artificial",
+	  "list": [
+			"Tipos de Inteligencia Artificial",
+			"Historia de la Inteligencia Artificial",
+			"Áreas de la Inteligencia Artificial"]
+	},
+	{ "topic": "topicOne",
+	  "number": "06",
+	  "title": "Medir la<br>Inteligencia",
+	  "list": [
+			"Sistemas Inteligentes",
+			"Medir la inteligencia",
+			"AGI y Superinteligencias"]
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Evaluación",
+	  "subtitle": "Módulo 1"
+	},
+	{ "topic": "topicTwo",
+	  "number": "07",
+	  "title": "Aprendizaje<br>Automático",
+	  "list": [
+			"Tipos de Aprendizaje",
+			"Tipos de Problemas",
+			"Tipos según su salida",
+			"Transparencia"]
+	},
+	{ "topic": "topicTwo",
+	  "number": "08",
+	  "title": "Algoritmos<br>de Regresión",
+	  "list": [
+			"Regresión Lineal",
+            "Regresión Polinómica",
+            "Estructuras jerárquicas",
+			"Máquina de Vectores de Soporte",
+			"Optimización Matemática "]
+	},
+	{ "topic": "topicTwo",
+	  "number": "09",
+	  "title": "Algoritmos de<br>Clasificación",
+	  "list": [
+			"Bayes Ingenuo",
+			"Regresión Logística",
+			"K-Vecinos Más Cercanos",
+			"Estructuras Jerárquicas",
+			"Máquina de Vectores de Soporte"]
+	},
+	{ "topic": "topicTwo",
+	  "number": "10",
+	  "title": "Algoritmos de<br>Agrupamiento",
+	  "list": [
+			"K-Medios",
+			"DBSCAN",
+			"Agrupamiento Jerárquico",
+            "Modelos de Mezcla Gaussianos"]
+	},
+	{ "topic": "topicTwo",
+	  "number": "11",
+	  "title": "Redes Neuronales",
+	  "list": [
+			"Perceptrón Simple y Multicapa",
+			"Redes Neuronales Convolucionales",
+			"Redes Neuronales Recurrentes",
+			"Transformers",
+			"Arquitecturas Especializadas"]
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Evaluación",
+	  "subtitle": "Módulo 2"
+	},
+	{ "topic": "topicThree",
+	  "number": "12",
+	  "title": "Herramientas para la IA",
+	  "list": [
+			"Lenguajes de Programación",
+			"Librerías para Ciencia de Datos",
+			"Liberías para Machine Learning",
+			"Plataformas"]
+	},
+	{ "topic": "topicThree",
+	  "number": "13",
+	  "title": "Ciclo de Vida<br>de Proyecto IA",
+	  "list": [
+			"Ciclo de Vida",
+			"Comprensión de negocio<br>y datos",
+			"Desarrollo del modelo",
+			"Explotación del Modelo",
+			"Ejemplo de uso"]
+	},
+	{ "topic": "topicThree",
+	  "number": "14",
+	  "title": "Aplicaciones<br>de la IA",
+	  "list": [
+			"Tareas predictivas",
+			"Tareas Descriptivas",
+			"Grandes Modelos<br>de Lenguaje"]
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Evaluación",
+	  "subtitle": "Módulo 3"
+    },
+	{ "topic": "topicFour",
+	  "number": "15",
+	  "title": "Implicaciones<br>Éticas de la IA",
+	  "list": [
+			"Ética",
+			"Ética y tecnología",
+			"Pensamiento críticos", 
+            "Ética de la IA"]
+	},
+	{ "topic": "topicFour",
+	  "number": "16",
+	  "title": "Regulaciones y <br>Geopolítica IA",
+	  "list": [
+			"Ejemplos ética IA",
+			"Regulaciones",
+			"Caso Venezuela",
+			"Geopolítica de la IA", 
+            "Futuro de la IA"]
+	},
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Evaluación",
+	  "subtitle": "Módulo 4"
+    },
+	{ "topic": "noTopic",
+	  "number": "00",
+	  "title": "Cierre",
+	  "background": "prize.png"
+	}
+]
